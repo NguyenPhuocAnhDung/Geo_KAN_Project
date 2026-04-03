@@ -1,0 +1,16 @@
+# Thư viện lõi xử lý dữ liệu
+pandas==2.2.1
+numpy==1.26.4
+scikit-learn==1.4.1.post1
+imbalanced-learn==0.12.0
+
+# Xử lý dữ liệu lớn / Parquet
+pyarrow==15.0.2
+fastparquet==2024.2.0
+
+# Visualization (Vẽ biểu đồ phân phối)
+matplotlib==3.8.3
+seaborn==0.13.2
+
+# Framework Deep Learning (Chuẩn bị cho KAN)
+torch==2.2.1

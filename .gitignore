@@ -1,0 +1,18 @@
+dataset/
+venv/
+__pycache__/
+*.pyc
+# 1. Bo qua du lieu nang
+dataset/
+
+# 2. Bo qua moi truong ao
+venv/
+__pycache__/
+*.pyc
+
+# 3. Bo qua file log
+logs/
+
+# 4. Bo qua trong so mo hinh
+models/checkpoints/
+*.pth
