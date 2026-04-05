@@ -10,11 +10,13 @@ class Hybrid_TKAN(nn.Module):
             input_size=input_features,
             hidden_size=lstm_hidden,
             num_layers=1,
-            batch_first=True
+            batch_first=True,
+            bidirectional=True  # <--- Bật chế độ BiLSTM ở đây
         )
         
         self.mlp = nn.Sequential(
-            nn.Linear(lstm_hidden, lstm_hidden),
+            # Thay lstm_hidden thành lstm_hidden * 2 ở tham số đầu tiên
+            nn.Linear(lstm_hidden * 2, lstm_hidden), 
             nn.LayerNorm(lstm_hidden),
             nn.GELU(),
             nn.Linear(lstm_hidden, mlp_hidden),
