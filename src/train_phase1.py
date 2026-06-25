@@ -2,6 +2,7 @@ import os
 import glob
 import torch
 import torch.nn as nn
+import torch.nn.functional as F
 import torch.optim as optim
 from torch.utils.data import Dataset, DataLoader, ConcatDataset
 import matplotlib.pyplot as plt
@@ -18,17 +19,31 @@ import warnings
 
 warnings.filterwarnings('ignore')
 
-# Import mô hình từ folder model
-from model.model import Hybrid_TKAN
+# Import mô hình bản nâng cấp (Attention_TKAN)
+from model.model import Attention_TKAN
+
+# ================= HÀM FOCAL LOSS =================
+class FocalLoss(nn.Module):
+    def __init__(self, alpha=None, gamma=2.0):
+        super(FocalLoss, self).__init__()
+        self.gamma = gamma
+        self.alpha = alpha 
+
+    def forward(self, inputs, targets):
+        ce_loss = F.cross_entropy(inputs, targets, weight=self.alpha, reduction='none')
+        pt = torch.exp(-ce_loss)
+        focal_loss = ((1 - pt) ** self.gamma * ce_loss).mean()
+        return focal_loss
 
 # ================= CẤU HÌNH TỐI ƯU GPU =================
 CURRENT_DIR = os.path.dirname(os.path.abspath(__file__))
 PROJECT_ROOT = os.path.dirname(CURRENT_DIR)              
 
-PHASE_NAME = "Phase1_GPU_Optimization"
+# Đổi PHASE_NAME để lưu file riêng, không đè kết quả cũ
+PHASE_NAME = "Phase1_Attention_TKAN_FocalLoss"
 DATA_DIR = os.path.join(PROJECT_ROOT, "dataset", "processed", "Phase1_Train")
 PLOT_DIR = os.path.join(PROJECT_ROOT, "reports", "plots", PHASE_NAME)
-MODEL_SAVE_DIR = os.path.join(PROJECT_ROOT, "models", "checkpoints")
+MODEL_SAVE_DIR = os.path.join(PROJECT_ROOT, "models", "checkpoints", PHASE_NAME)
 SCALER_PATH = os.path.join(PROJECT_ROOT, "models", "global_scaler.pkl")
 
 os.makedirs(PLOT_DIR, exist_ok=True)
@@ -42,7 +57,7 @@ BATCH_SIZE = 2048
 SEQ_LENGTH = 10
 LEARNING_RATE = 1e-3     
 EARLY_STOP_PATIENCE = 5  
-NUM_WORKERS = 4          # Số lượng luồng nạp data từ RAM vào VRAM
+NUM_WORKERS = 4          
 
 # ================= CẤU HÌNH LOGGING XUẤT RA FILE =================
 LOG_DIR = os.path.join(PROJECT_ROOT, "logs")
@@ -117,8 +132,9 @@ def train():
     logging.info("⚖️ Đang tải Global Scaler...")
     global_scaler = joblib.load(SCALER_PATH)
 
-    first_df = pq.read_table(all_files[0]).to_pandas()
-    GLOBAL_FEATURE_COLS = first_df.drop(columns=['Label'], errors='ignore').columns.tolist()
+    # Lấy danh sách 114 đặc trưng chuẩn TỪ SCALER thay vì đếm từ file Parquet
+    GLOBAL_FEATURE_COLS = global_scaler.feature_names_in_.tolist()
+    logging.info(f"✅ Hệ thống sẽ sử dụng {len(GLOBAL_FEATURE_COLS)} đặc trưng chuẩn làm đầu vào.")
     
     logging.info("🔍 Đang quét toàn bộ file để chốt danh sách Nhãn (Labels)...")
     temp_labels = set()
@@ -130,7 +146,7 @@ def train():
     class_names = [inv_label_map[i] for i in range(len(GLOBAL_LABEL_MAP))]
     logging.info(f"🎯 Phát hiện tổng cộng {len(class_names)} nhãn.")
 
-    logging.info(f"🧠 ĐANG NẠP TOÀN BỘ FILE LÊN 512GB RAM VÀ CHIA 80/20 THEO TỪNG NHÃN...")
+    logging.info(f"🧠 ĐANG NẠP TOÀN BỘ FILE LÊN VÀ CHIA 80/20 THEO TỪNG NHÃN...")
     train_datasets_list = []
     val_datasets_list = []
     global_class_counts = {i: 0 for i in range(len(GLOBAL_LABEL_MAP))}
@@ -166,17 +182,18 @@ def train():
                      for i in range(num_classes)]
     class_weights_tensor = torch.FloatTensor(class_weights).to(device)
 
-    # Hợp nhất dữ liệu toàn cục
     global_train_ds = ConcatDataset(train_datasets_list)
     global_val_ds = ConcatDataset(val_datasets_list)
     
-    # Shuffle tự nhiên, không dùng Sampler để tránh lỗi tràn 2^24
     train_loader = DataLoader(global_train_ds, batch_size=BATCH_SIZE, shuffle=True, num_workers=NUM_WORKERS, pin_memory=True)
     val_loader = DataLoader(global_val_ds, batch_size=BATCH_SIZE, shuffle=False, num_workers=NUM_WORKERS, pin_memory=True)
 
-    model = Hybrid_TKAN(input_features=len(GLOBAL_FEATURE_COLS), num_classes=len(GLOBAL_LABEL_MAP)).to(device)
+    # Khởi tạo mô hình mới: Attention_TKAN
+    model = Attention_TKAN(input_features=len(GLOBAL_FEATURE_COLS), num_classes=len(GLOBAL_LABEL_MAP)).to(device)
     optimizer = optim.AdamW(model.parameters(), lr=LEARNING_RATE)
-    criterion = nn.CrossEntropyLoss(weight=class_weights_tensor) # Tích hợp trọng số phạt
+    
+    # Sử dụng Focal Loss
+    criterion = FocalLoss(alpha=class_weights_tensor, gamma=2.0) 
     early_stopping = EarlyStopping(patience=EARLY_STOP_PATIENCE)
     
     epoch = 1
@@ -247,7 +264,7 @@ def train():
         bin_preds = [0 if 'benign' in inv_label_map[i].lower() else 1 for i in v_preds]
         plot_confusion_matrix(bin_labels, bin_preds, ['Bình thường', 'Tấn công'], f"Nhị phân - Ep {epoch}", f"cm_bin_epoch_{epoch}")
 
-        torch.save(model.state_dict(), os.path.join(MODEL_SAVE_DIR, f"tkan_vram_epoch_{epoch}.pth"))
+        torch.save(model.state_dict(), os.path.join(MODEL_SAVE_DIR, f"attention_tkan_epoch_{epoch}.pth"))
         
         early_stopping(val_loss/val_batches)
         if early_stopping.early_stop: 
