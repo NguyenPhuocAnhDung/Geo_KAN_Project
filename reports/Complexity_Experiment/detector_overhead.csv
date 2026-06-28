@@ -1,0 +1,4 @@
+Detector,Mean_ms,Std_ms,Notes
+Shift_Score_KAN,0.007,0.002,Per batch (512 samples)
+ADWIN,67.625,2.360,10k error samples
+DDM,29.382,2.202,10k error samples

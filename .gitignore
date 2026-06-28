@@ -10,9 +10,9 @@ venv/
 __pycache__/
 *.pyc
 
-# 3. Bo qua file log
-logs/
+# # 3. Bo qua file log
+# logs/
 
-# 4. Bo qua trong so mo hinh
-models/checkpoints/
-*.pth
+# # 4. Bo qua trong so mo hinh
+# models/checkpoints/
+# *.pth

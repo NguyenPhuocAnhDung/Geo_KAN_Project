@@ -1,0 +1,5 @@
+Detector,Avg_Delay,Avg_MaxF1Drop,Avg_Recovery,Total_Drifts
+Drift-TKAN,3.00,0.1350,0.00,340
+ADWIN,1.00,0.1367,0.00,20
+PageHinkley,1.00,0.1367,0.00,20
+DDM,2.50,0.1370,0.00,18

@@ -1,0 +1,12 @@
+Experiment,Variant,EMA_Alpha,Threshold_Factor,Replay_Size,Avg_F1,Total_Drifts
+Full_Drift-TKAN,full,0.99,1.0,500,0.8728,340
+No_KAN_(Linear),no_kan,0.99,1.0,500,0.9760,0
+EMA_alpha=0.90,full,0.9,1.0,500,0.5907,21
+EMA_alpha=0.95,full,0.95,1.0,500,0.6363,33
+EMA_alpha=0.99,full,0.99,1.0,500,0.8728,340
+Threshold_2sigma,full,0.99,0.67,500,0.8614,368
+Threshold_3sigma,full,0.99,1.0,500,0.8728,340
+Threshold_4sigma,full,0.99,1.33,500,0.8727,310
+Replay_200,full,0.99,1.0,200,0.8728,340
+Replay_500,full,0.99,1.0,500,0.8728,340
+Replay_1000,full,0.99,1.0,1000,0.8728,340

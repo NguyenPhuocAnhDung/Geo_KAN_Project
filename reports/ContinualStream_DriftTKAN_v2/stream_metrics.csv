@@ -1,0 +1,788 @@
+Step,Phase,Chunk,F1_Macro,S_rep,S_KAN,Entropy,Drift_Type,Action
+1,Phase1_Train,full_init,0.8397,0.0,0.0,0.0,No Drift,initial_train
+2,Phase2_DriftTest,l1-doh-nondoh,0.0000,0.888041,0.001305,1.4562,No Drift,no_action
+3,Phase2_DriftTest,l2-benigndoh-maliciousdoh,0.0000,0.889693,0.001758,1.4596,No Drift,no_action
+4,Phase2_DriftTest,benign-monday-no-metadata,0.1387,0.877314,0.002132,0.2623,No Drift,no_action
+5,Phase2_DriftTest,botnet-friday-no-metadata,0.1229,0.853548,0.002342,0.2074,No Drift,no_action
+6,Phase2_DriftTest,bruteforce-tuesday-no-metadata,0.1225,0.836296,0.002998,0.1844,No Drift,no_action
+7,Phase2_DriftTest,ddos-friday-no-metadata,0.1651,0.820398,0.003350,0.8431,No Drift,no_action
+8,Phase2_DriftTest,dos-wednesday-no-metadata,0.1348,0.798989,0.004698,0.2829,No Drift,no_action
+9,Phase2_DriftTest,infiltration-thursday-no-metadata,0.1418,0.781398,0.005231,0.0781,Type II: Decision Shift,fine_tune
+10,Phase2_DriftTest,portscan-friday-no-metadata,0.1420,0.759755,0.006130,0.0802,Type II: Decision Shift,fine_tune
+11,Phase2_DriftTest,webattacks-thursday-no-metadata,0.1552,0.739214,0.006784,0.0896,Type II: Decision Shift,fine_tune
+12,Phase2_DriftTest,all,0.0000,0.909115,0.007459,1.4645,Type III: Severe Concept Drift,fine_tune
+715,Phase2_DriftTest,dns2tcp_tunnel_99911_doh10_2020-03-30t20_14_53.737987,0.0000,0.910193,0.008326,1.4767,Type III: Severe Concept Drift,fine_tune
+716,Phase2_DriftTest,dns2tcp_tunnel_99911_doh10_2020-03-30t20_38_28.859919,0.0000,0.907932,0.008168,1.5059,Type III: Severe Concept Drift,fine_tune
+717,Phase2_DriftTest,dns2tcp_tunnel_99911_doh10_2020-03-30t21_02_04.628792,0.0000,0.904217,0.008297,1.4795,Type III: Severe Concept Drift,fine_tune
+718,Phase2_DriftTest,dns2tcp_tunnel_99911_doh10_2020-03-30t21_24_57.269335,0.0000,0.899943,0.008452,1.4416,Type III: Severe Concept Drift,fine_tune
+719,Phase2_DriftTest,dns2tcp_tunnel_99911_doh10_2020-03-30t21_47_44.394911,0.0000,0.895840,0.008747,1.3943,Type III: Severe Concept Drift,fine_tune
+720,Phase2_DriftTest,dns2tcp_tunnel_99911_doh10_2020-03-30t22_10_23.521383,0.0000,0.899049,0.008762,1.4295,Type III: Severe Concept Drift,fine_tune
+721,Phase2_DriftTest,dns2tcp_tunnel_99911_doh10_2020-03-30t22_32_59.693494,0.0000,0.903355,0.009053,1.4576,Type III: Severe Concept Drift,fine_tune
+722,Phase2_DriftTest,dns2tcp_tunnel_99911_doh10_2020-03-30t22_55_36.495418,0.0000,0.908103,0.009235,1.4882,Type III: Severe Concept Drift,fine_tune
+723,Phase2_DriftTest,dns2tcp_tunnel_99911_doh10_2020-03-30t23_18_08.993977,0.0000,0.900721,0.009422,1.4450,Type III: Severe Concept Drift,fine_tune
+724,Phase2_DriftTest,dns2tcp_tunnel_99911_doh10_2020-03-30t23_40_42.099501,0.0000,0.896404,0.009630,1.3893,Type III: Severe Concept Drift,fine_tune
+725,Phase2_DriftTest,dns2tcp_tunnel_99911_doh10_2020-03-31t00_03_18.965975,0.0000,0.899634,0.009658,1.4327,Type III: Severe Concept Drift,fine_tune
+726,Phase2_DriftTest,dns2tcp_tunnel_99911_doh10_2020-03-31t00_25_53.490166,0.0000,0.895036,0.010012,1.3798,Type III: Severe Concept Drift,fine_tune
+727,Phase2_DriftTest,dns2tcp_tunnel_99911_doh10_2020-03-31t00_48_32.137398,0.0000,0.896803,0.010382,1.4095,Type III: Severe Concept Drift,fine_tune
+728,Phase2_DriftTest,dns2tcp_tunnel_99911_doh10_2020-03-31t01_11_11.175423,0.0000,0.896611,0.010499,1.4562,Type III: Severe Concept Drift,fine_tune
+729,Phase2_DriftTest,dns2tcp_tunnel_99911_doh10_2020-03-31t01_33_50.184478,0.0000,0.894811,0.010507,1.4266,Type III: Severe Concept Drift,fine_tune
+730,Phase2_DriftTest,dns2tcp_tunnel_99911_doh10_2020-03-31t01_56_28.642906,0.0000,0.890577,0.010927,1.3709,Type II: Decision Shift,fine_tune
+731,Phase2_DriftTest,dns2tcp_tunnel_99911_doh10_2020-03-31t02_19_08.554448,0.0000,0.887615,0.010957,1.3257,Type II: Decision Shift,fine_tune
+732,Phase2_DriftTest,dns2tcp_tunnel_99911_doh10_2020-03-31t02_41_47.454073,0.0000,0.887232,0.011180,1.3673,Type II: Decision Shift,fine_tune
+733,Phase2_DriftTest,dns2tcp_tunnel_99911_doh10_2020-03-31t03_04_21.045929,0.0000,0.883950,0.011542,1.4041,Type II: Decision Shift,fine_tune
+734,Phase2_DriftTest,dns2tcp_tunnel_99911_doh10_2020-03-31t03_26_55.721687,0.0000,0.885119,0.011797,1.4492,Type II: Decision Shift,fine_tune
+735,Phase2_DriftTest,dns2tcp_tunnel_99911_doh10_2020-03-31t03_49_30.072131,0.0000,0.885057,0.012101,1.4918,Type II: Decision Shift,fine_tune
+736,Phase2_DriftTest,dns2tcp_tunnel_99911_doh10_2020-03-31t04_12_03.540198,0.0000,0.883773,0.012446,1.5327,Type II: Decision Shift,fine_tune
+737,Phase2_DriftTest,dns2tcp_tunnel_99911_doh10_2020-03-31t04_34_37.279160,0.0000,0.884086,0.012518,1.5727,Type II: Decision Shift,fine_tune
+738,Phase2_DriftTest,dns2tcp_tunnel_99911_doh10_2020-03-31t04_57_14.936835,0.0000,0.876988,0.012622,1.5335,Type II: Decision Shift,fine_tune
+739,Phase2_DriftTest,dns2tcp_tunnel_99911_doh10_2020-03-31t05_19_52.677832,0.0000,0.866083,0.012837,1.4987,Type II: Decision Shift,fine_tune
+740,Phase2_DriftTest,dns2tcp_tunnel_99911_doh10_2020-03-31t05_42_30.659892,0.0000,0.861401,0.013183,1.4544,Type II: Decision Shift,fine_tune
+741,Phase2_DriftTest,dns2tcp_tunnel_99911_doh10_2020-03-31t06_05_11.066321,0.0000,0.854625,0.013470,1.4883,Type II: Decision Shift,fine_tune
+742,Phase2_DriftTest,dns2tcp_tunnel_99911_doh10_2020-03-31t06_27_53.535674,0.0000,0.841307,0.013900,1.5274,Type II: Decision Shift,fine_tune
+743,Phase2_DriftTest,dns2tcp_tunnel_99911_doh10_2020-03-31t06_50_32.348466,0.0000,0.827861,0.014468,1.5639,Type II: Decision Shift,fine_tune
+744,Phase2_DriftTest,dns2tcp_tunnel_99911_doh10_2020-03-31t07_13_12.180184,0.0000,0.810974,0.014949,1.5995,Type II: Decision Shift,fine_tune
+745,Phase2_DriftTest,dns2tcp_tunnel_99911_doh10_2020-03-31t07_35_48.659090,0.0000,0.798221,0.015088,1.5676,Type II: Decision Shift,fine_tune
+746,Phase2_DriftTest,dns2tcp_tunnel_99911_doh10_2020-03-31t07_58_20.826286,0.0000,0.776216,0.015294,1.5971,Type II: Decision Shift,fine_tune
+747,Phase2_DriftTest,dns2tcp_tunnel_99911_doh10_2020-03-31t08_20_56.860006,0.0000,0.755576,0.015509,1.6209,Type II: Decision Shift,fine_tune
+748,Phase2_DriftTest,dns2tcp_tunnel_99911_doh10_2020-03-31t08_43_35.388576,0.0000,0.726836,0.015614,1.6492,Type II: Decision Shift,fine_tune
+749,Phase2_DriftTest,dns2tcp_tunnel_99911_doh10_2020-03-31t09_06_14.156546,0.0000,0.699360,0.016081,1.6297,Type II: Decision Shift,fine_tune
+750,Phase2_DriftTest,dns2tcp_tunnel_99911_doh10_2020-03-31t09_28_54.227384,0.0000,0.673246,0.016400,1.6121,Type II: Decision Shift,fine_tune
+751,Phase2_DriftTest,dns2tcp_tunnel_99911_doh10_2020-03-31t09_51_39.782772,0.0000,0.660559,0.016623,1.6041,Type II: Decision Shift,fine_tune
+752,Phase2_DriftTest,dns2tcp_tunnel_99911_doh10_2020-03-31t10_14_24.855361,0.0000,0.644042,0.016681,1.5918,Type II: Decision Shift,fine_tune
+753,Phase2_DriftTest,dns2tcp_tunnel_99911_doh10_2020-03-31t10_37_07.841741,1.0000,0.601428,0.017008,1.5600,Type II: Decision Shift,fine_tune
+754,Phase2_DriftTest,dns2tcp_tunnel_99911_doh10_2020-03-31t10_59_53.217370,0.0000,0.590741,0.016843,1.5601,Type II: Decision Shift,fine_tune
+755,Phase2_DriftTest,dns2tcp_tunnel_99911_doh10_2020-03-31t11_22_31.430399,1.0000,0.560164,0.016915,1.5458,Type II: Decision Shift,fine_tune
+756,Phase2_DriftTest,dns2tcp_tunnel_99911_doh10_2020-03-31t11_45_12.596724,1.0000,0.527582,0.017015,1.5123,Type II: Decision Shift,fine_tune
+757,Phase2_DriftTest,dns2tcp_tunnel_99911_doh10_2020-03-31t12_07_52.822495,1.0000,0.511675,0.017313,1.5119,Type II: Decision Shift,fine_tune
+758,Phase2_DriftTest,dns2tcp_tunnel_99911_doh10_2020-03-31t12_30_34.308477,1.0000,0.491978,0.017505,1.4893,Type II: Decision Shift,fine_tune
+759,Phase2_DriftTest,dns2tcp_tunnel_99911_doh10_2020-03-31t12_53_14.723810,1.0000,0.466660,0.017576,1.4567,Type II: Decision Shift,fine_tune
+760,Phase2_DriftTest,dns2tcp_tunnel_99911_doh10_2020-03-31t13_15_54.813732,1.0000,0.448598,0.017647,1.4192,Type II: Decision Shift,fine_tune
+761,Phase2_DriftTest,dns2tcp_tunnel_99911_doh10_2020-03-31t13_38_33.840296,1.0000,0.430213,0.017728,1.4108,Type II: Decision Shift,fine_tune
+762,Phase2_DriftTest,dns2tcp_tunnel_99911_doh10_2020-03-31t14_01_12.320189,1.0000,0.418313,0.017915,1.4103,Type II: Decision Shift,fine_tune
+763,Phase2_DriftTest,dns2tcp_tunnel_99911_doh10_2020-03-31t14_23_51.114870,1.0000,0.405579,0.018170,1.4094,Type II: Decision Shift,fine_tune
+764,Phase2_DriftTest,dns2tcp_tunnel_99911_doh10_2020-03-31t14_46_27.651036,1.0000,0.402489,0.018260,1.4062,Type II: Decision Shift,fine_tune
+765,Phase2_DriftTest,dns2tcp_tunnel_99911_doh10_2020-03-31t15_09_06.290533,1.0000,0.389272,0.018324,1.4104,Type II: Decision Shift,fine_tune
+766,Phase2_DriftTest,dns2tcp_tunnel_99911_doh10_2020-03-31t15_31_44.477427,1.0000,0.360604,0.018347,1.3694,Type II: Decision Shift,fine_tune
+767,Phase2_DriftTest,dns2tcp_tunnel_99911_doh10_2020-03-31t15_54_17.732967,1.0000,0.347307,0.018418,1.3609,Type II: Decision Shift,fine_tune
+768,Phase2_DriftTest,dns2tcp_tunnel_99911_doh10_2020-03-31t16_16_51.526325,1.0000,0.329019,0.018350,1.3346,Type II: Decision Shift,fine_tune
+769,Phase2_DriftTest,dns2tcp_tunnel_99911_doh10_2020-03-31t16_39_24.523443,1.0000,0.319955,0.018406,1.3412,Type II: Decision Shift,fine_tune
+770,Phase2_DriftTest,dns2tcp_tunnel_99911_doh10_2020-03-31t17_01_57.407125,1.0000,0.305150,0.018537,1.2893,Type II: Decision Shift,fine_tune
+771,Phase2_DriftTest,dns2tcp_tunnel_99911_doh10_2020-03-31t17_24_30.546790,1.0000,0.295877,0.018388,1.2833,Type II: Decision Shift,fine_tune
+772,Phase2_DriftTest,dns2tcp_tunnel_99911_doh10_2020-03-31t17_47_03.145021,1.0000,0.279379,0.018461,1.2313,Type II: Decision Shift,fine_tune
+773,Phase2_DriftTest,dns2tcp_tunnel_99911_doh10_2020-03-31t18_09_33.908989,1.0000,0.262065,0.018608,1.1527,Type II: Decision Shift,fine_tune
+774,Phase2_DriftTest,dns2tcp_tunnel_99911_doh10_2020-03-31t18_32_06.093518,1.0000,0.253604,0.018660,1.1472,Type II: Decision Shift,fine_tune
+775,Phase2_DriftTest,dns2tcp_tunnel_99911_doh10_2020-03-31t18_54_36.472362,1.0000,0.246406,0.018383,1.1574,Type II: Decision Shift,fine_tune
+776,Phase2_DriftTest,dns2tcp_tunnel_99911_doh10_2020-03-31t19_17_05.392027,1.0000,0.236352,0.018475,1.1154,Type II: Decision Shift,fine_tune
+777,Phase2_DriftTest,dns2tcp_tunnel_99911_doh10_2020-03-31t19_39_34.462626,1.0000,0.230469,0.018174,1.1413,Type II: Decision Shift,fine_tune
+778,Phase2_DriftTest,dns2tcp_tunnel_99911_doh10_2020-03-31t20_02_03.323428,1.0000,0.225106,0.018132,1.1535,Type II: Decision Shift,fine_tune
+779,Phase2_DriftTest,dns2tcp_tunnel_99911_doh10_2020-03-31t20_24_32.210338,1.0000,0.221856,0.017972,1.1736,Type II: Decision Shift,fine_tune
+780,Phase2_DriftTest,dns2tcp_tunnel_99911_doh10_2020-03-31t20_47_00.848014,1.0000,0.207161,0.017980,1.0887,Type II: Decision Shift,fine_tune
+781,Phase2_DriftTest,dns2tcp_tunnel_99911_doh10_2020-03-31t21_09_30.164025,1.0000,0.197356,0.017941,1.0318,Type II: Decision Shift,fine_tune
+782,Phase2_DriftTest,dns2tcp_tunnel_99911_doh10_2020-03-31t21_31_58.774601,1.0000,0.188078,0.018117,0.9580,Type II: Decision Shift,fine_tune
+786,Phase2_DriftTest,dns2tcp_tunnel_99911_doh1_2020-03-30t20_38_05.584040,1.0000,0.183487,0.018014,0.9873,Type II: Decision Shift,fine_tune
+787,Phase2_DriftTest,dns2tcp_tunnel_99911_doh1_2020-03-30t21_01_47.132121,1.0000,0.174277,0.018101,0.8916,Type II: Decision Shift,fine_tune
+788,Phase2_DriftTest,dns2tcp_tunnel_99911_doh1_2020-03-30t21_24_44.969922,1.0000,0.170482,0.017814,0.9387,Type II: Decision Shift,fine_tune
+789,Phase2_DriftTest,dns2tcp_tunnel_99911_doh1_2020-03-30t21_47_33.278567,1.0000,0.163391,0.017740,0.8898,Type II: Decision Shift,fine_tune
+790,Phase2_DriftTest,dns2tcp_tunnel_99911_doh1_2020-03-30t22_10_13.974838,1.0000,0.155149,0.018384,0.7666,Type II: Decision Shift,fine_tune
+791,Phase2_DriftTest,dns2tcp_tunnel_99911_doh1_2020-03-30t22_32_51.701236,1.0000,0.151204,0.018183,0.8067,Type II: Decision Shift,fine_tune
+792,Phase2_DriftTest,dns2tcp_tunnel_99911_doh1_2020-03-30t22_55_28.423268,1.0000,0.144828,0.018279,0.7236,Type II: Decision Shift,fine_tune
+793,Phase2_DriftTest,dns2tcp_tunnel_99911_doh1_2020-03-30t23_18_02.932543,1.0000,0.139169,0.018519,0.6536,Type II: Decision Shift,fine_tune
+794,Phase2_DriftTest,dns2tcp_tunnel_99911_doh1_2020-03-30t23_40_35.234999,1.0000,0.135279,0.018355,0.6807,Type II: Decision Shift,fine_tune
+795,Phase2_DriftTest,dns2tcp_tunnel_99911_doh1_2020-03-31t00_03_10.550389,1.0000,0.130128,0.018400,0.6233,Type II: Decision Shift,fine_tune
+796,Phase2_DriftTest,dns2tcp_tunnel_99911_doh1_2020-03-31t00_25_45.863400,1.0000,0.125966,0.018579,0.6211,Type II: Decision Shift,fine_tune
+797,Phase2_DriftTest,dns2tcp_tunnel_99911_doh1_2020-03-31t00_48_23.471017,1.0000,0.122910,0.018112,0.6681,Type II: Decision Shift,fine_tune
+798,Phase2_DriftTest,dns2tcp_tunnel_99911_doh1_2020-03-31t01_11_02.621986,1.0000,0.118714,0.018178,0.6450,Type II: Decision Shift,fine_tune
+799,Phase2_DriftTest,dns2tcp_tunnel_99911_doh1_2020-03-31t01_33_42.426437,1.0000,0.115533,0.017980,0.6674,Type II: Decision Shift,fine_tune
+800,Phase2_DriftTest,dns2tcp_tunnel_99911_doh1_2020-03-31t01_56_20.971450,1.0000,0.112761,0.017920,0.7064,Type II: Decision Shift,fine_tune
+801,Phase2_DriftTest,dns2tcp_tunnel_99911_doh1_2020-03-31t02_18_58.876500,1.0000,0.110614,0.017535,0.7453,Type II: Decision Shift,fine_tune
+802,Phase2_DriftTest,dns2tcp_tunnel_99911_doh1_2020-03-31t02_41_40.204630,1.0000,0.105849,0.017407,0.6846,Type II: Decision Shift,fine_tune
+803,Phase2_DriftTest,dns2tcp_tunnel_99911_doh1_2020-03-31t03_04_14.060313,1.0000,0.102494,0.017544,0.6804,Type II: Decision Shift,fine_tune
+804,Phase2_DriftTest,dns2tcp_tunnel_99911_doh1_2020-03-31t03_26_48.467941,1.0000,0.097970,0.017564,0.6082,Type II: Decision Shift,fine_tune
+805,Phase2_DriftTest,dns2tcp_tunnel_99911_doh1_2020-03-31t03_49_23.209031,1.0000,0.095325,0.017643,0.6282,Type II: Decision Shift,fine_tune
+806,Phase2_DriftTest,dns2tcp_tunnel_99911_doh1_2020-03-31t04_11_56.383150,1.0000,0.092481,0.017696,0.6281,Type II: Decision Shift,fine_tune
+807,Phase2_DriftTest,dns2tcp_tunnel_99911_doh1_2020-03-31t04_34_30.698373,1.0000,0.088767,0.017836,0.5615,Type II: Decision Shift,fine_tune
+808,Phase2_DriftTest,dns2tcp_tunnel_99911_doh1_2020-03-31t04_57_07.549578,1.0000,0.085983,0.017771,0.5585,Type II: Decision Shift,fine_tune
+809,Phase2_DriftTest,dns2tcp_tunnel_99911_doh1_2020-03-31t05_19_45.329529,1.0000,0.083882,0.017394,0.5998,Type II: Decision Shift,fine_tune
+810,Phase2_DriftTest,dns2tcp_tunnel_99911_doh1_2020-03-31t05_42_22.470846,1.0000,0.080743,0.017322,0.5607,Type II: Decision Shift,fine_tune
+811,Phase2_DriftTest,dns2tcp_tunnel_99911_doh1_2020-03-31t06_05_01.617124,1.0000,0.078610,0.017296,0.5738,Type II: Decision Shift,fine_tune
+812,Phase2_DriftTest,dns2tcp_tunnel_99911_doh1_2020-03-31t06_27_45.344870,1.0000,0.075534,0.017223,0.5136,Type II: Decision Shift,fine_tune
+813,Phase2_DriftTest,dns2tcp_tunnel_99911_doh1_2020-03-31t06_50_24.726782,1.0000,0.073105,0.017054,0.4980,Type II: Decision Shift,fine_tune
+814,Phase2_DriftTest,dns2tcp_tunnel_99911_doh1_2020-03-31t07_13_02.880575,1.0000,0.071417,0.016764,0.5432,Type II: Decision Shift,fine_tune
+815,Phase2_DriftTest,dns2tcp_tunnel_99911_doh1_2020-03-31t07_35_42.517412,1.0000,0.068687,0.016717,0.4744,Type II: Decision Shift,fine_tune
+816,Phase2_DriftTest,dns2tcp_tunnel_99911_doh1_2020-03-31t07_58_14.738818,1.0000,0.066733,0.016756,0.4775,Type II: Decision Shift,fine_tune
+817,Phase2_DriftTest,dns2tcp_tunnel_99911_doh1_2020-03-31t08_20_48.841399,1.0000,0.064867,0.016483,0.4884,Type II: Decision Shift,fine_tune
+818,Phase2_DriftTest,dns2tcp_tunnel_99911_doh1_2020-03-31t08_43_29.043727,1.0000,0.062938,0.016542,0.4790,Type II: Decision Shift,fine_tune
+819,Phase2_DriftTest,dns2tcp_tunnel_99911_doh1_2020-03-31t09_06_06.351094,1.0000,0.061280,0.016444,0.4925,Type II: Decision Shift,fine_tune
+820,Phase2_DriftTest,dns2tcp_tunnel_99911_doh1_2020-03-31t09_28_46.201549,1.0000,0.059644,0.016243,0.5113,Type II: Decision Shift,fine_tune
+821,Phase2_DriftTest,dns2tcp_tunnel_99911_doh1_2020-03-31t09_51_30.068224,1.0000,0.057865,0.016278,0.5062,Type II: Decision Shift,fine_tune
+822,Phase2_DriftTest,dns2tcp_tunnel_99911_doh1_2020-03-31t10_14_16.739661,1.0000,0.056329,0.016402,0.5204,Type II: Decision Shift,fine_tune
+823,Phase2_DriftTest,dns2tcp_tunnel_99911_doh1_2020-03-31t10_36_59.232393,1.0000,0.054150,0.016300,0.4581,Type II: Decision Shift,fine_tune
+824,Phase2_DriftTest,dns2tcp_tunnel_99911_doh1_2020-03-31t10_59_41.101361,1.0000,0.052322,0.016195,0.4248,Type II: Decision Shift,fine_tune
+825,Phase2_DriftTest,dns2tcp_tunnel_99911_doh1_2020-03-31t11_22_23.833171,1.0000,0.050943,0.016171,0.4407,Type II: Decision Shift,fine_tune
+826,Phase2_DriftTest,dns2tcp_tunnel_99911_doh1_2020-03-31t11_45_03.948542,1.0000,0.049446,0.016105,0.4290,Type II: Decision Shift,fine_tune
+827,Phase2_DriftTest,dns2tcp_tunnel_99911_doh1_2020-03-31t12_07_44.199442,1.0000,0.048074,0.015896,0.4338,Type II: Decision Shift,fine_tune
+828,Phase2_DriftTest,dns2tcp_tunnel_99911_doh1_2020-03-31t12_30_26.142988,1.0000,0.046419,0.015833,0.3869,Type II: Decision Shift,fine_tune
+829,Phase2_DriftTest,dns2tcp_tunnel_99911_doh1_2020-03-31t12_53_07.101910,1.0000,0.045216,0.015693,0.4051,Type II: Decision Shift,fine_tune
+830,Phase2_DriftTest,dns2tcp_tunnel_99911_doh1_2020-03-31t13_15_47.482289,1.0000,0.044108,0.015574,0.4299,Type II: Decision Shift,fine_tune
+831,Phase2_DriftTest,dns2tcp_tunnel_99911_doh1_2020-03-31t13_38_25.930231,1.0000,0.042610,0.015478,0.3938,Type II: Decision Shift,fine_tune
+832,Phase2_DriftTest,dns2tcp_tunnel_99911_doh1_2020-03-31t14_01_04.212202,1.0000,0.041497,0.015560,0.4077,Type II: Decision Shift,fine_tune
+833,Phase2_DriftTest,dns2tcp_tunnel_99911_doh1_2020-03-31t14_23_43.665339,1.0000,0.040096,0.015507,0.3640,Type II: Decision Shift,fine_tune
+834,Phase2_DriftTest,dns2tcp_tunnel_99911_doh1_2020-03-31t14_46_20.917791,1.0000,0.039224,0.015209,0.4008,Type II: Decision Shift,fine_tune
+835,Phase2_DriftTest,dns2tcp_tunnel_99911_doh1_2020-03-31t15_08_58.259779,1.0000,0.037988,0.015192,0.3767,Type II: Decision Shift,fine_tune
+836,Phase2_DriftTest,dns2tcp_tunnel_99911_doh1_2020-03-31t15_31_38.216263,1.0000,0.036952,0.014980,0.3834,Type II: Decision Shift,fine_tune
+837,Phase2_DriftTest,dns2tcp_tunnel_99911_doh1_2020-03-31t15_54_10.678007,1.0000,0.035715,0.014954,0.3383,Type II: Decision Shift,fine_tune
+838,Phase2_DriftTest,dns2tcp_tunnel_99911_doh1_2020-03-31t16_16_43.587045,1.0000,0.034762,0.015025,0.3393,Type II: Decision Shift,fine_tune
+839,Phase2_DriftTest,dns2tcp_tunnel_99911_doh1_2020-03-31t16_39_17.131324,1.0000,0.033811,0.015084,0.3344,Type II: Decision Shift,fine_tune
+840,Phase2_DriftTest,dns2tcp_tunnel_99911_doh1_2020-03-31t17_01_51.748222,1.0000,0.032924,0.015034,0.3339,Type II: Decision Shift,fine_tune
+841,Phase2_DriftTest,dns2tcp_tunnel_99911_doh1_2020-03-31t17_24_23.482558,1.0000,0.032050,0.014800,0.3390,Type II: Decision Shift,fine_tune
+842,Phase2_DriftTest,dns2tcp_tunnel_99911_doh1_2020-03-31t17_46_57.431722,1.0000,0.031020,0.014670,0.3043,Type II: Decision Shift,fine_tune
+843,Phase2_DriftTest,dns2tcp_tunnel_99911_doh1_2020-03-31t18_09_28.288548,1.0000,0.030343,0.014457,0.3376,Type II: Decision Shift,fine_tune
+844,Phase2_DriftTest,dns2tcp_tunnel_99911_doh1_2020-03-31t18_31_59.426473,1.0000,0.029546,0.014499,0.3384,Type II: Decision Shift,fine_tune
+845,Phase2_DriftTest,dns2tcp_tunnel_99911_doh1_2020-03-31t18_54_31.104608,1.0000,0.028788,0.014583,0.3416,Type II: Decision Shift,fine_tune
+846,Phase2_DriftTest,dns2tcp_tunnel_99911_doh1_2020-03-31t19_16_59.892209,1.0000,0.028024,0.014492,0.3373,Type II: Decision Shift,fine_tune
+847,Phase2_DriftTest,dns2tcp_tunnel_99911_doh1_2020-03-31t19_39_29.272486,1.0000,0.027274,0.014393,0.3403,Type II: Decision Shift,fine_tune
+848,Phase2_DriftTest,dns2tcp_tunnel_99911_doh1_2020-03-31t20_01_57.966517,1.0000,0.026587,0.014514,0.3424,Type II: Decision Shift,fine_tune
+849,Phase2_DriftTest,dns2tcp_tunnel_99911_doh1_2020-03-31t20_24_26.821843,1.0000,0.025871,0.014350,0.3377,Type II: Decision Shift,fine_tune
+850,Phase2_DriftTest,dns2tcp_tunnel_99911_doh1_2020-03-31t20_46_55.597423,1.0000,0.025387,0.013992,0.3769,Type II: Decision Shift,fine_tune
+851,Phase2_DriftTest,dns2tcp_tunnel_99911_doh1_2020-03-31t21_09_24.993414,1.0000,0.024740,0.014170,0.3778,Type II: Decision Shift,fine_tune
+852,Phase2_DriftTest,dns2tcp_tunnel_99911_doh1_2020-03-31t21_31_53.640207,1.0000,0.023963,0.014168,0.3463,Type II: Decision Shift,fine_tune
+856,Phase2_DriftTest,dns2tcp_tunnel_99911_doh2_2020-03-30t20_38_09.521847,1.0000,0.023337,0.014029,0.3472,Type II: Decision Shift,fine_tune
+857,Phase2_DriftTest,dns2tcp_tunnel_99911_doh2_2020-03-30t21_01_49.604938,1.0000,0.022868,0.013820,0.3749,Type II: Decision Shift,fine_tune
+858,Phase2_DriftTest,dns2tcp_tunnel_99911_doh2_2020-03-30t21_24_46.414022,1.0000,0.022376,0.013664,0.3927,Type II: Decision Shift,fine_tune
+859,Phase2_DriftTest,dns2tcp_tunnel_99911_doh2_2020-03-30t21_47_35.390592,1.0000,0.021640,0.013522,0.3648,Type II: Decision Shift,fine_tune
+860,Phase2_DriftTest,dns2tcp_tunnel_99911_doh2_2020-03-30t22_10_15.114246,1.0000,0.021111,0.013638,0.3663,Type II: Decision Shift,fine_tune
+861,Phase2_DriftTest,dns2tcp_tunnel_99911_doh2_2020-03-30t22_32_52.983978,1.0000,0.020615,0.013695,0.3701,Type II: Decision Shift,fine_tune
+862,Phase2_DriftTest,dns2tcp_tunnel_99911_doh2_2020-03-30t22_55_30.260018,1.0000,0.020085,0.013837,0.3646,Type II: Decision Shift,fine_tune
+863,Phase2_DriftTest,dns2tcp_tunnel_99911_doh2_2020-03-30t23_18_04.086938,1.0000,0.019567,0.013925,0.3663,Type II: Decision Shift,fine_tune
+864,Phase2_DriftTest,dns2tcp_tunnel_99911_doh2_2020-03-30t23_40_36.246233,1.0000,0.019105,0.013925,0.3773,Type II: Decision Shift,fine_tune
+865,Phase2_DriftTest,dns2tcp_tunnel_99911_doh2_2020-03-31t00_03_12.874114,1.0000,0.018675,0.013756,0.3874,Type II: Decision Shift,fine_tune
+866,Phase2_DriftTest,dns2tcp_tunnel_99911_doh2_2020-03-31t00_25_46.917131,1.0000,0.018072,0.013624,0.3600,Type II: Decision Shift,fine_tune
+867,Phase2_DriftTest,dns2tcp_tunnel_99911_doh2_2020-03-31t00_48_24.605726,1.0000,0.017625,0.013586,0.3563,Type II: Decision Shift,fine_tune
+868,Phase2_DriftTest,dns2tcp_tunnel_99911_doh2_2020-03-31t01_11_03.683722,1.0000,0.017211,0.013737,0.3588,Type II: Decision Shift,fine_tune
+869,Phase2_DriftTest,dns2tcp_tunnel_99911_doh2_2020-03-31t01_33_43.166218,1.0000,0.016833,0.013586,0.3689,Type II: Decision Shift,fine_tune
+870,Phase2_DriftTest,dns2tcp_tunnel_99911_doh2_2020-03-31t01_56_21.812307,1.0000,0.016450,0.013483,0.3810,Type II: Decision Shift,fine_tune
+871,Phase2_DriftTest,dns2tcp_tunnel_99911_doh2_2020-03-31t02_19_01.405306,1.0000,0.016073,0.013493,0.3842,Type II: Decision Shift,fine_tune
+872,Phase2_DriftTest,dns2tcp_tunnel_99911_doh2_2020-03-31t02_41_41.265959,1.0000,0.015551,0.013446,0.3563,Type II: Decision Shift,fine_tune
+873,Phase2_DriftTest,dns2tcp_tunnel_99911_doh2_2020-03-31t03_04_15.305341,1.0000,0.015200,0.013314,0.3638,Type II: Decision Shift,fine_tune
+874,Phase2_DriftTest,dns2tcp_tunnel_99911_doh2_2020-03-31t03_26_49.569817,1.0000,0.014879,0.013394,0.3780,Type II: Decision Shift,fine_tune
+875,Phase2_DriftTest,dns2tcp_tunnel_99911_doh2_2020-03-31t03_49_24.012674,1.0000,0.014543,0.013508,0.3791,Type II: Decision Shift,fine_tune
+876,Phase2_DriftTest,dns2tcp_tunnel_99911_doh2_2020-03-31t04_11_57.246996,1.0000,0.014043,0.013551,0.3468,Type II: Decision Shift,fine_tune
+877,Phase2_DriftTest,dns2tcp_tunnel_99911_doh2_2020-03-31t04_34_31.690192,1.0000,0.013710,0.013414,0.3445,Type II: Decision Shift,fine_tune
+878,Phase2_DriftTest,dns2tcp_tunnel_99911_doh2_2020-03-31t04_57_08.439163,1.0000,0.013405,0.013278,0.3491,Type II: Decision Shift,fine_tune
+879,Phase2_DriftTest,dns2tcp_tunnel_99911_doh2_2020-03-31t05_19_46.543211,1.0000,0.013051,0.013267,0.3402,Type II: Decision Shift,fine_tune
+880,Phase2_DriftTest,dns2tcp_tunnel_99911_doh2_2020-03-31t05_42_23.833872,1.0000,0.012728,0.013039,0.3383,Type II: Decision Shift,fine_tune
+881,Phase2_DriftTest,dns2tcp_tunnel_99911_doh2_2020-03-31t06_05_02.555394,1.0000,0.012408,0.013061,0.3292,Type II: Decision Shift,fine_tune
+882,Phase2_DriftTest,dns2tcp_tunnel_99911_doh2_2020-03-31t06_27_46.748369,1.0000,0.012109,0.013061,0.3269,Type II: Decision Shift,fine_tune
+883,Phase2_DriftTest,dns2tcp_tunnel_99911_doh2_2020-03-31t06_50_25.737203,1.0000,0.011832,0.013093,0.3356,Type II: Decision Shift,fine_tune
+884,Phase2_DriftTest,dns2tcp_tunnel_99911_doh2_2020-03-31t07_13_04.857931,1.0000,0.011623,0.012828,0.3552,Type II: Decision Shift,fine_tune
+885,Phase2_DriftTest,dns2tcp_tunnel_99911_doh2_2020-03-31t07_35_43.684851,1.0000,0.011504,0.012735,0.3831,Type II: Decision Shift,fine_tune
+886,Phase2_DriftTest,dns2tcp_tunnel_99911_doh2_2020-03-31t07_58_15.965533,1.0000,0.011113,0.012557,0.3579,Type II: Decision Shift,fine_tune
+887,Phase2_DriftTest,dns2tcp_tunnel_99911_doh2_2020-03-31t08_20_50.289783,1.0000,0.010785,0.012486,0.3385,Type II: Decision Shift,fine_tune
+888,Phase2_DriftTest,dns2tcp_tunnel_99911_doh2_2020-03-31t08_43_30.080682,1.0000,0.010525,0.012326,0.3350,Type II: Decision Shift,fine_tune
+889,Phase2_DriftTest,dns2tcp_tunnel_99911_doh2_2020-03-31t09_06_07.723727,1.0000,0.010308,0.012571,0.3468,Type II: Decision Shift,fine_tune
+890,Phase2_DriftTest,dns2tcp_tunnel_99911_doh2_2020-03-31t09_28_47.497244,1.0000,0.010069,0.012704,0.3454,Type II: Decision Shift,fine_tune
+891,Phase2_DriftTest,dns2tcp_tunnel_99911_doh2_2020-03-31t09_51_31.395583,1.0000,0.009859,0.012735,0.3563,Type II: Decision Shift,fine_tune
+892,Phase2_DriftTest,dns2tcp_tunnel_99911_doh2_2020-03-31t10_14_18.056327,1.0000,0.009557,0.012584,0.3370,Type II: Decision Shift,fine_tune
+893,Phase2_DriftTest,dns2tcp_tunnel_99911_doh2_2020-03-31t10_37_00.659688,1.0000,0.009404,0.012445,0.3501,Type II: Decision Shift,fine_tune
+894,Phase2_DriftTest,dns2tcp_tunnel_99911_doh2_2020-03-31t10_59_45.335226,1.0000,0.009053,0.012286,0.3151,Type II: Decision Shift,fine_tune
+895,Phase2_DriftTest,dns2tcp_tunnel_99911_doh2_2020-03-31t11_22_25.279055,1.0000,0.008838,0.012313,0.3141,Type II: Decision Shift,fine_tune
+896,Phase2_DriftTest,dns2tcp_tunnel_99911_doh2_2020-03-31t11_45_05.982239,1.0000,0.008658,0.012530,0.3254,Type II: Decision Shift,fine_tune
+897,Phase2_DriftTest,dns2tcp_tunnel_99911_doh2_2020-03-31t12_07_45.529275,1.0000,0.008363,0.012443,0.2945,Type II: Decision Shift,fine_tune
+898,Phase2_DriftTest,dns2tcp_tunnel_99911_doh2_2020-03-31t12_30_27.415865,1.0000,0.008190,0.012500,0.2997,Type II: Decision Shift,fine_tune
+899,Phase2_DriftTest,dns2tcp_tunnel_99911_doh2_2020-03-31t12_53_08.006489,1.0000,0.008000,0.012571,0.3017,Type II: Decision Shift,fine_tune
+900,Phase2_DriftTest,dns2tcp_tunnel_99911_doh2_2020-03-31t13_15_48.483801,1.0000,0.007827,0.012739,0.3025,Type II: Decision Shift,fine_tune
+901,Phase2_DriftTest,dns2tcp_tunnel_99911_doh2_2020-03-31t13_38_27.024617,1.0000,0.007647,0.012574,0.2963,Type II: Decision Shift,fine_tune
+902,Phase2_DriftTest,dns2tcp_tunnel_99911_doh2_2020-03-31t14_01_05.454686,1.0000,0.007508,0.012428,0.3071,Type II: Decision Shift,fine_tune
+903,Phase2_DriftTest,dns2tcp_tunnel_99911_doh2_2020-03-31t14_23_44.715585,1.0000,0.007343,0.012250,0.3114,Type II: Decision Shift,fine_tune
+904,Phase2_DriftTest,dns2tcp_tunnel_99911_doh2_2020-03-31t14_46_21.794299,1.0000,0.007215,0.012261,0.3160,Type II: Decision Shift,fine_tune
+905,Phase2_DriftTest,dns2tcp_tunnel_99911_doh2_2020-03-31t15_08_59.582212,1.0000,0.007042,0.012037,0.3145,Type II: Decision Shift,fine_tune
+906,Phase2_DriftTest,dns2tcp_tunnel_99911_doh2_2020-03-31t15_31_39.183038,1.0000,0.006801,0.011947,0.2840,Type II: Decision Shift,fine_tune
+907,Phase2_DriftTest,dns2tcp_tunnel_99911_doh2_2020-03-31t15_54_11.949910,1.0000,0.006675,0.012015,0.2905,Type II: Decision Shift,fine_tune
+908,Phase2_DriftTest,dns2tcp_tunnel_99911_doh2_2020-03-31t16_16_46.753944,1.0000,0.006529,0.012039,0.2912,Type II: Decision Shift,fine_tune
+909,Phase2_DriftTest,dns2tcp_tunnel_99911_doh2_2020-03-31t16_39_18.292354,1.0000,0.006415,0.011888,0.3031,Type II: Decision Shift,fine_tune
+910,Phase2_DriftTest,dns2tcp_tunnel_99911_doh2_2020-03-31t17_01_52.712055,1.0000,0.006281,0.011939,0.3115,Type II: Decision Shift,fine_tune
+911,Phase2_DriftTest,dns2tcp_tunnel_99911_doh2_2020-03-31t17_24_24.894044,1.0000,0.006084,0.011920,0.2870,Type II: Decision Shift,fine_tune
+912,Phase2_DriftTest,dns2tcp_tunnel_99911_doh2_2020-03-31t17_46_58.286049,1.0000,0.006066,0.011701,0.3202,Type II: Decision Shift,fine_tune
+913,Phase2_DriftTest,dns2tcp_tunnel_99911_doh2_2020-03-31t18_09_29.024947,1.0000,0.006041,0.011485,0.3516,Type II: Decision Shift,fine_tune
+914,Phase2_DriftTest,dns2tcp_tunnel_99911_doh2_2020-03-31t18_32_00.407641,1.0000,0.006028,0.011314,0.3812,Type II: Decision Shift,fine_tune
+915,Phase2_DriftTest,dns2tcp_tunnel_99911_doh2_2020-03-31t18_54_31.906255,1.0000,0.005752,0.011255,0.3448,Type II: Decision Shift,fine_tune
+916,Phase2_DriftTest,dns2tcp_tunnel_99911_doh2_2020-03-31t19_17_00.644514,1.0000,0.005693,0.011252,0.3597,Type II: Decision Shift,fine_tune
+917,Phase2_DriftTest,dns2tcp_tunnel_99911_doh2_2020-03-31t19_39_29.996145,1.0000,0.005449,0.011154,0.3238,Type II: Decision Shift,fine_tune
+918,Phase2_DriftTest,dns2tcp_tunnel_99911_doh2_2020-03-31t20_01_58.705233,1.0000,0.005325,0.011275,0.3224,Type II: Decision Shift,fine_tune
+919,Phase2_DriftTest,dns2tcp_tunnel_99911_doh2_2020-03-31t20_24_27.514597,1.0000,0.005142,0.011174,0.2988,Type II: Decision Shift,fine_tune
+920,Phase2_DriftTest,dns2tcp_tunnel_99911_doh2_2020-03-31t20_46_56.322517,1.0000,0.005021,0.011046,0.2955,Type II: Decision Shift,fine_tune
+921,Phase2_DriftTest,dns2tcp_tunnel_99911_doh2_2020-03-31t21_09_25.688476,1.0000,0.004908,0.011141,0.2945,Type II: Decision Shift,fine_tune
+922,Phase2_DriftTest,dns2tcp_tunnel_99911_doh2_2020-03-31t21_31_54.357919,1.0000,0.004761,0.010970,0.2803,Type II: Decision Shift,fine_tune
+926,Phase2_DriftTest,dns2tcp_tunnel_99911_doh3_2020-03-30t20_38_12.306120,1.0000,0.004642,0.011029,0.2716,Type II: Decision Shift,fine_tune
+927,Phase2_DriftTest,dns2tcp_tunnel_99911_doh3_2020-03-30t21_01_51.417506,1.0000,0.004565,0.010824,0.2805,Type II: Decision Shift,fine_tune
+929,Phase2_DriftTest,dns2tcp_tunnel_99911_doh3_2020-03-30t21_47_36.388255,1.0000,0.004501,0.010796,0.2904,Type II: Decision Shift,fine_tune
+930,Phase2_DriftTest,dns2tcp_tunnel_99911_doh3_2020-03-30t22_10_16.086144,1.0000,0.004355,0.010694,0.2724,Type II: Decision Shift,fine_tune
+931,Phase2_DriftTest,dns2tcp_tunnel_99911_doh3_2020-03-30t22_32_54.200887,1.0000,0.004263,0.010579,0.2710,Type II: Decision Shift,fine_tune
+932,Phase2_DriftTest,dns2tcp_tunnel_99911_doh3_2020-03-30t22_55_31.341299,1.0000,0.004168,0.010390,0.2701,Type II: Decision Shift,fine_tune
+933,Phase2_DriftTest,dns2tcp_tunnel_99911_doh3_2020-03-30t23_18_04.676955,1.0000,0.004156,0.010234,0.2984,Type II: Decision Shift,fine_tune
+934,Phase2_DriftTest,dns2tcp_tunnel_99911_doh3_2020-03-30t23_40_37.011026,1.0000,0.004064,0.010130,0.2994,Type II: Decision Shift,fine_tune
+935,Phase2_DriftTest,dns2tcp_tunnel_99911_doh3_2020-03-31t00_03_13.918512,1.0000,0.004060,0.009939,0.3271,Type II: Decision Shift,fine_tune
+936,Phase2_DriftTest,dns2tcp_tunnel_99911_doh3_2020-03-31t00_25_48.003949,1.0000,0.004045,0.009856,0.3480,Type II: Decision Shift,fine_tune
+937,Phase2_DriftTest,dns2tcp_tunnel_99911_doh3_2020-03-31t00_48_25.618110,1.0000,0.003954,0.009903,0.3449,Type II: Decision Shift,fine_tune
+938,Phase2_DriftTest,dns2tcp_tunnel_99911_doh3_2020-03-31t01_11_04.741734,1.0000,0.003890,0.009811,0.3492,Type II: Decision Shift,fine_tune
+939,Phase2_DriftTest,dns2tcp_tunnel_99911_doh3_2020-03-31t01_33_44.058906,1.0000,0.003785,0.009812,0.3389,Type II: Decision Shift,fine_tune
+940,Phase2_DriftTest,dns2tcp_tunnel_99911_doh3_2020-03-31t01_56_22.782637,1.0000,0.003663,0.009644,0.3251,Type II: Decision Shift,fine_tune
+941,Phase2_DriftTest,dns2tcp_tunnel_99911_doh3_2020-03-31t02_19_02.253995,1.0000,0.003534,0.009596,0.3052,Type II: Decision Shift,fine_tune
+942,Phase2_DriftTest,dns2tcp_tunnel_99911_doh3_2020-03-31t02_41_41.959065,1.0000,0.003490,0.009387,0.3175,Type II: Decision Shift,fine_tune
+943,Phase2_DriftTest,dns2tcp_tunnel_99911_doh3_2020-03-31t03_04_16.009085,1.0000,0.003411,0.009426,0.3178,Type II: Decision Shift,fine_tune
+944,Phase2_DriftTest,dns2tcp_tunnel_99911_doh3_2020-03-31t03_26_50.532416,1.0000,0.003353,0.009505,0.3279,Type II: Decision Shift,fine_tune
+945,Phase2_DriftTest,dns2tcp_tunnel_99911_doh3_2020-03-31t03_49_25.121543,1.0000,0.003261,0.009360,0.3195,Type II: Decision Shift,fine_tune
+946,Phase2_DriftTest,dns2tcp_tunnel_99911_doh3_2020-03-31t04_11_58.472065,1.0000,0.003179,0.009341,0.3134,Type II: Decision Shift,fine_tune
+947,Phase2_DriftTest,dns2tcp_tunnel_99911_doh3_2020-03-31t04_34_32.711213,1.0000,0.003109,0.009512,0.3121,Type II: Decision Shift,fine_tune
+948,Phase2_DriftTest,dns2tcp_tunnel_99911_doh3_2020-03-31t04_57_09.485889,1.0000,0.003010,0.009424,0.2961,Type II: Decision Shift,fine_tune
+949,Phase2_DriftTest,dns2tcp_tunnel_99911_doh3_2020-03-31t05_19_47.686204,1.0000,0.002908,0.009270,0.2793,Type II: Decision Shift,fine_tune
+950,Phase2_DriftTest,dns2tcp_tunnel_99911_doh3_2020-03-31t05_42_25.052171,1.0000,0.002845,0.009144,0.2785,Type II: Decision Shift,fine_tune
+951,Phase2_DriftTest,dns2tcp_tunnel_99911_doh3_2020-03-31t06_05_04.211640,1.0000,0.002797,0.009122,0.2759,Type II: Decision Shift,fine_tune
+952,Phase2_DriftTest,dns2tcp_tunnel_99911_doh3_2020-03-31t06_27_47.710088,1.0000,0.002716,0.009023,0.2627,Type II: Decision Shift,fine_tune
+953,Phase2_DriftTest,dns2tcp_tunnel_99911_doh3_2020-03-31t06_50_26.720660,1.0000,0.002658,0.009210,0.2617,Type II: Decision Shift,fine_tune
+954,Phase2_DriftTest,dns2tcp_tunnel_99911_doh3_2020-03-31t07_13_05.868988,1.0000,0.002599,0.009086,0.2560,Type II: Decision Shift,fine_tune
+955,Phase2_DriftTest,dns2tcp_tunnel_99911_doh3_2020-03-31t07_35_44.406735,1.0000,0.002528,0.008895,0.2487,Type II: Decision Shift,fine_tune
+956,Phase2_DriftTest,dns2tcp_tunnel_99911_doh3_2020-03-31t07_58_16.632546,1.0000,0.002454,0.008760,0.2385,Type II: Decision Shift,fine_tune
+957,Phase2_DriftTest,dns2tcp_tunnel_99911_doh3_2020-03-31t08_20_50.929547,1.0000,0.002425,0.008762,0.2421,Type II: Decision Shift,fine_tune
+958,Phase2_DriftTest,dns2tcp_tunnel_99911_doh3_2020-03-31t08_43_30.862948,1.0000,0.002394,0.008725,0.2474,Type II: Decision Shift,fine_tune
+959,Phase2_DriftTest,dns2tcp_tunnel_99911_doh3_2020-03-31t09_06_08.635047,1.0000,0.002357,0.008657,0.2496,Type II: Decision Shift,fine_tune
+960,Phase2_DriftTest,dns2tcp_tunnel_99911_doh3_2020-03-31t09_28_48.581172,1.0000,0.002307,0.008899,0.2479,Type II: Decision Shift,fine_tune
+961,Phase2_DriftTest,dns2tcp_tunnel_99911_doh3_2020-03-31t09_51_33.085274,1.0000,0.002270,0.008936,0.2476,Type II: Decision Shift,fine_tune
+962,Phase2_DriftTest,dns2tcp_tunnel_99911_doh3_2020-03-31t10_14_19.214165,1.0000,0.002244,0.008791,0.2603,Type II: Decision Shift,fine_tune
+963,Phase2_DriftTest,dns2tcp_tunnel_99911_doh3_2020-03-31t10_37_01.655493,1.0000,0.002201,0.008686,0.2591,Type II: Decision Shift,fine_tune
+964,Phase2_DriftTest,dns2tcp_tunnel_99911_doh3_2020-03-31t10_59_46.413520,1.0000,0.002202,0.008513,0.2838,Type II: Decision Shift,fine_tune
+965,Phase2_DriftTest,dns2tcp_tunnel_99911_doh3_2020-03-31t11_22_26.182973,1.0000,0.002153,0.008333,0.2825,Type II: Decision Shift,fine_tune
+966,Phase2_DriftTest,dns2tcp_tunnel_99911_doh3_2020-03-31t11_45_06.838497,1.0000,0.002133,0.008371,0.2833,Type II: Decision Shift,fine_tune
+967,Phase2_DriftTest,dns2tcp_tunnel_99911_doh3_2020-03-31t12_07_46.704994,1.0000,0.002114,0.008212,0.2941,Type II: Decision Shift,fine_tune
+968,Phase2_DriftTest,dns2tcp_tunnel_99911_doh3_2020-03-31t12_30_28.312834,1.0000,0.002061,0.008416,0.2896,Type II: Decision Shift,fine_tune
+969,Phase2_DriftTest,dns2tcp_tunnel_99911_doh3_2020-03-31t12_53_09.153331,1.0000,0.002014,0.008248,0.2883,Type II: Decision Shift,fine_tune
+970,Phase2_DriftTest,dns2tcp_tunnel_99911_doh3_2020-03-31t13_15_49.670261,1.0000,0.001971,0.008093,0.2880,Type II: Decision Shift,fine_tune
+971,Phase2_DriftTest,dns2tcp_tunnel_99911_doh3_2020-03-31t13_38_28.251682,1.0000,0.001954,0.008146,0.2881,Type II: Decision Shift,fine_tune
+972,Phase2_DriftTest,dns2tcp_tunnel_99911_doh3_2020-03-31t14_01_06.547778,1.0000,0.001901,0.008123,0.2764,Type II: Decision Shift,fine_tune
+973,Phase2_DriftTest,dns2tcp_tunnel_99911_doh3_2020-03-31t14_23_45.611013,1.0000,0.001842,0.007940,0.2663,Type II: Decision Shift,fine_tune
+974,Phase2_DriftTest,dns2tcp_tunnel_99911_doh3_2020-03-31t14_46_22.470866,1.0000,0.001859,0.007797,0.2911,Type II: Decision Shift,fine_tune
+975,Phase2_DriftTest,dns2tcp_tunnel_99911_doh3_2020-03-31t15_09_00.774694,1.0000,0.001789,0.007631,0.2781,Type II: Decision Shift,fine_tune
+976,Phase2_DriftTest,dns2tcp_tunnel_99911_doh3_2020-03-31t15_31_39.850957,1.0000,0.001784,0.007703,0.2908,Type II: Decision Shift,fine_tune
+977,Phase2_DriftTest,dns2tcp_tunnel_99911_doh3_2020-03-31t15_54_12.727210,1.0000,0.001720,0.007549,0.2782,Type II: Decision Shift,fine_tune
+978,Phase2_DriftTest,dns2tcp_tunnel_99911_doh3_2020-03-31t16_16_47.357008,1.0000,0.001664,0.007565,0.2640,Type II: Decision Shift,fine_tune
+979,Phase2_DriftTest,dns2tcp_tunnel_99911_doh3_2020-03-31t16_39_19.028752,1.0000,0.001670,0.007618,0.2704,Type II: Decision Shift,fine_tune
+980,Phase2_DriftTest,dns2tcp_tunnel_99911_doh3_2020-03-31t17_01_53.329801,1.0000,0.001685,0.007524,0.2917,Type II: Decision Shift,fine_tune
+981,Phase2_DriftTest,dns2tcp_tunnel_99911_doh3_2020-03-31t17_24_25.656687,1.0000,0.001612,0.007453,0.2735,Type II: Decision Shift,fine_tune
+982,Phase2_DriftTest,dns2tcp_tunnel_99911_doh3_2020-03-31t17_46_58.984698,1.0000,0.001571,0.007360,0.2695,Type II: Decision Shift,fine_tune
+983,Phase2_DriftTest,dns2tcp_tunnel_99911_doh3_2020-03-31t18_09_29.669597,1.0000,0.001530,0.007312,0.2588,Type II: Decision Shift,fine_tune
+984,Phase2_DriftTest,dns2tcp_tunnel_99911_doh3_2020-03-31t18_32_01.328335,1.0000,0.001480,0.007219,0.2491,Type II: Decision Shift,fine_tune
+985,Phase2_DriftTest,dns2tcp_tunnel_99911_doh3_2020-03-31t18_54_32.600351,1.0000,0.001473,0.007178,0.2543,Type II: Decision Shift,fine_tune
+986,Phase2_DriftTest,dns2tcp_tunnel_99911_doh3_2020-03-31t19_17_01.344179,1.0000,0.001434,0.007148,0.2467,Type II: Decision Shift,fine_tune
+987,Phase2_DriftTest,dns2tcp_tunnel_99911_doh3_2020-03-31t19_39_30.664992,1.0000,0.001429,0.007164,0.2499,Type II: Decision Shift,fine_tune
+988,Phase2_DriftTest,dns2tcp_tunnel_99911_doh3_2020-03-31t20_01_59.362943,1.0000,0.001407,0.007025,0.2527,Type II: Decision Shift,fine_tune
+989,Phase2_DriftTest,dns2tcp_tunnel_99911_doh3_2020-03-31t20_24_28.184510,1.0000,0.001371,0.006939,0.2483,Type II: Decision Shift,fine_tune
+990,Phase2_DriftTest,dns2tcp_tunnel_99911_doh3_2020-03-31t20_46_56.966615,1.0000,0.001334,0.006771,0.2434,Type II: Decision Shift,fine_tune
+991,Phase2_DriftTest,dns2tcp_tunnel_99911_doh3_2020-03-31t21_09_26.342695,1.0000,0.001301,0.006678,0.2407,Type II: Decision Shift,fine_tune
+992,Phase2_DriftTest,dns2tcp_tunnel_99911_doh3_2020-03-31t21_31_54.974406,1.0000,0.001289,0.006652,0.2424,Type II: Decision Shift,fine_tune
+993,Phase2_DriftTest,dns2tcp_tunnel_99911_doh4_2020-03-30t19_28_52.842770,1.0000,0.001260,0.006802,0.2389,Type II: Decision Shift,fine_tune
+995,Phase2_DriftTest,dns2tcp_tunnel_99911_doh4_2020-03-30t20_14_46.213820,1.0000,0.001245,0.006730,0.2429,Type II: Decision Shift,fine_tune
+997,Phase2_DriftTest,dns2tcp_tunnel_99911_doh4_2020-03-30t21_01_53.536390,1.0000,0.001209,0.006725,0.2365,Type II: Decision Shift,fine_tune
+999,Phase2_DriftTest,dns2tcp_tunnel_99911_doh4_2020-03-30t21_47_38.090394,1.0000,0.001190,0.006632,0.2405,Type II: Decision Shift,fine_tune
+1000,Phase2_DriftTest,dns2tcp_tunnel_99911_doh4_2020-03-30t22_10_17.134875,1.0000,0.001183,0.006625,0.2419,Type II: Decision Shift,fine_tune
+1001,Phase2_DriftTest,dns2tcp_tunnel_99911_doh4_2020-03-30t22_32_55.458848,1.0000,0.001171,0.006476,0.2506,Type II: Decision Shift,fine_tune
+1002,Phase2_DriftTest,dns2tcp_tunnel_99911_doh4_2020-03-30t22_55_32.317683,1.0000,0.001151,0.006637,0.2524,Type II: Decision Shift,fine_tune
+1003,Phase2_DriftTest,dns2tcp_tunnel_99911_doh4_2020-03-30t23_18_05.427974,1.0000,0.001114,0.006468,0.2521,Type II: Decision Shift,fine_tune
+1004,Phase2_DriftTest,dns2tcp_tunnel_99911_doh4_2020-03-30t23_40_37.806643,1.0000,0.001085,0.006330,0.2490,Type II: Decision Shift,fine_tune
+1005,Phase2_DriftTest,dns2tcp_tunnel_99911_doh4_2020-03-31t00_03_14.781434,1.0000,0.001051,0.006219,0.2387,Type II: Decision Shift,fine_tune
+1006,Phase2_DriftTest,dns2tcp_tunnel_99911_doh4_2020-03-31t00_25_49.034978,1.0000,0.001039,0.006148,0.2378,Type II: Decision Shift,fine_tune
+1007,Phase2_DriftTest,dns2tcp_tunnel_99911_doh4_2020-03-31t00_48_26.649409,1.0000,0.001024,0.006217,0.2401,Type II: Decision Shift,fine_tune
+1008,Phase2_DriftTest,dns2tcp_tunnel_99911_doh4_2020-03-31t01_11_05.616843,1.0000,0.001045,0.006119,0.2619,Type II: Decision Shift,fine_tune
+1009,Phase2_DriftTest,dns2tcp_tunnel_99911_doh4_2020-03-31t01_33_45.029066,1.0000,0.001011,0.005996,0.2559,Type II: Decision Shift,fine_tune
+1010,Phase2_DriftTest,dns2tcp_tunnel_99911_doh4_2020-03-31t01_56_23.860952,1.0000,0.000990,0.005871,0.2526,Type II: Decision Shift,fine_tune
+1011,Phase2_DriftTest,dns2tcp_tunnel_99911_doh4_2020-03-31t02_19_03.021271,1.0000,0.000975,0.006008,0.2529,Type II: Decision Shift,fine_tune
+1012,Phase2_DriftTest,dns2tcp_tunnel_99911_doh4_2020-03-31t02_41_42.731276,1.0000,0.000965,0.006021,0.2516,Type II: Decision Shift,fine_tune
+1013,Phase2_DriftTest,dns2tcp_tunnel_99911_doh4_2020-03-31t03_04_16.647746,1.0000,0.000936,0.005873,0.2456,Type II: Decision Shift,fine_tune
+1014,Phase2_DriftTest,dns2tcp_tunnel_99911_doh4_2020-03-31t03_26_51.255859,1.0000,0.000945,0.005838,0.2554,Type II: Decision Shift,fine_tune
+1015,Phase2_DriftTest,dns2tcp_tunnel_99911_doh4_2020-03-31t03_49_25.732152,1.0000,0.000913,0.005684,0.2495,Type II: Decision Shift,fine_tune
+1016,Phase2_DriftTest,dns2tcp_tunnel_99911_doh4_2020-03-31t04_11_58.994549,1.0000,0.000891,0.005817,0.2450,Type II: Decision Shift,fine_tune
+1017,Phase2_DriftTest,dns2tcp_tunnel_99911_doh4_2020-03-31t04_34_33.224692,1.0000,0.000879,0.005967,0.2454,Type II: Decision Shift,fine_tune
+1018,Phase2_DriftTest,dns2tcp_tunnel_99911_doh4_2020-03-31t04_57_10.317928,1.0000,0.000868,0.005892,0.2459,Type II: Decision Shift,fine_tune
+1019,Phase2_DriftTest,dns2tcp_tunnel_99911_doh4_2020-03-31t05_19_48.455456,1.0000,0.000847,0.005759,0.2455,Type II: Decision Shift,fine_tune
+1020,Phase2_DriftTest,dns2tcp_tunnel_99911_doh4_2020-03-31t05_42_25.675062,1.0000,0.000821,0.005637,0.2423,Type II: Decision Shift,fine_tune
+1021,Phase2_DriftTest,dns2tcp_tunnel_99911_doh4_2020-03-31t06_05_05.030995,1.0000,0.000837,0.005590,0.2639,Type II: Decision Shift,fine_tune
+1022,Phase2_DriftTest,dns2tcp_tunnel_99911_doh4_2020-03-31t06_27_48.406503,1.0000,0.000861,0.005507,0.2833,Type II: Decision Shift,fine_tune
+1023,Phase2_DriftTest,dns2tcp_tunnel_99911_doh4_2020-03-31t06_50_27.484226,1.0000,0.000841,0.005507,0.2746,Type II: Decision Shift,fine_tune
+1024,Phase2_DriftTest,dns2tcp_tunnel_99911_doh4_2020-03-31t07_13_06.787915,1.0000,0.000808,0.005448,0.2600,Type II: Decision Shift,fine_tune
+1025,Phase2_DriftTest,dns2tcp_tunnel_99911_doh4_2020-03-31t07_35_45.016767,1.0000,0.000785,0.005327,0.2558,Type II: Decision Shift,fine_tune
+1026,Phase2_DriftTest,dns2tcp_tunnel_99911_doh4_2020-03-31t07_58_17.169659,1.0000,0.000763,0.005241,0.2512,Type II: Decision Shift,fine_tune
+1027,Phase2_DriftTest,dns2tcp_tunnel_99911_doh4_2020-03-31t08_20_51.653145,1.0000,0.000749,0.005291,0.2604,Type II: Decision Shift,fine_tune
+1028,Phase2_DriftTest,dns2tcp_tunnel_99911_doh4_2020-03-31t08_43_31.521956,1.0000,0.000720,0.005171,0.2551,Type II: Decision Shift,fine_tune
+1029,Phase2_DriftTest,dns2tcp_tunnel_99911_doh4_2020-03-31t09_06_09.329259,1.0000,0.000697,0.005061,0.2485,Type II: Decision Shift,fine_tune
+1030,Phase2_DriftTest,dns2tcp_tunnel_99911_doh4_2020-03-31t09_28_49.327973,1.0000,0.000686,0.005080,0.2457,Type II: Decision Shift,fine_tune
+1031,Phase2_DriftTest,dns2tcp_tunnel_99911_doh4_2020-03-31t09_51_34.131395,1.0000,0.000683,0.005264,0.2469,Type II: Decision Shift,fine_tune
+1032,Phase2_DriftTest,dns2tcp_tunnel_99911_doh4_2020-03-31t10_14_19.912890,1.0000,0.000660,0.005216,0.2357,Type II: Decision Shift,fine_tune
+1033,Phase2_DriftTest,dns2tcp_tunnel_99911_doh4_2020-03-31t10_37_02.207846,1.0000,0.000675,0.005192,0.2559,Type II: Decision Shift,fine_tune
+1034,Phase2_DriftTest,dns2tcp_tunnel_99911_doh4_2020-03-31t10_59_47.338977,1.0000,0.000653,0.005069,0.2508,Type II: Decision Shift,fine_tune
+1035,Phase2_DriftTest,dns2tcp_tunnel_99911_doh4_2020-03-31t11_22_27.098695,1.0000,0.000636,0.004992,0.2449,No Drift,no_action
+1036,Phase2_DriftTest,dns2tcp_tunnel_99911_doh4_2020-03-31t11_45_07.624331,1.0000,0.000621,0.004893,0.2422,No Drift,no_action
+1037,Phase2_DriftTest,dns2tcp_tunnel_99911_doh4_2020-03-31t12_07_47.453907,1.0000,0.000606,0.004796,0.2394,No Drift,no_action
+1038,Phase2_DriftTest,dns2tcp_tunnel_99911_doh4_2020-03-31t12_30_29.180385,1.0000,0.000591,0.004701,0.2367,No Drift,no_action
+1039,Phase2_DriftTest,dns2tcp_tunnel_99911_doh4_2020-03-31t12_53_09.825848,1.0000,0.000576,0.004608,0.2341,No Drift,no_action
+1040,Phase2_DriftTest,dns2tcp_tunnel_99911_doh4_2020-03-31t13_15_50.455290,1.0000,0.000562,0.004517,0.2315,No Drift,no_action
+1041,Phase2_DriftTest,dns2tcp_tunnel_99911_doh4_2020-03-31t13_38_29.079792,1.0000,0.000549,0.004427,0.2290,No Drift,no_action
+1042,Phase2_DriftTest,dns2tcp_tunnel_99911_doh4_2020-03-31t14_01_07.331155,1.0000,0.000536,0.004340,0.2264,No Drift,no_action
+1043,Phase2_DriftTest,dns2tcp_tunnel_99911_doh4_2020-03-31t14_23_46.290631,1.0000,0.000523,0.004254,0.2240,No Drift,no_action
+1044,Phase2_DriftTest,dns2tcp_tunnel_99911_doh4_2020-03-31t14_46_23.058385,1.0000,0.000510,0.004170,0.2215,No Drift,no_action
+1045,Phase2_DriftTest,dns2tcp_tunnel_99911_doh4_2020-03-31t15_09_01.375749,1.0000,0.000498,0.004087,0.2191,No Drift,no_action
+1046,Phase2_DriftTest,dns2tcp_tunnel_99911_doh4_2020-03-31t15_31_40.556679,1.0000,0.000486,0.004007,0.2168,No Drift,no_action
+1047,Phase2_DriftTest,dns2tcp_tunnel_99911_doh4_2020-03-31t15_54_13.346720,1.0000,0.000475,0.003928,0.2145,No Drift,no_action
+1048,Phase2_DriftTest,dns2tcp_tunnel_99911_doh4_2020-03-31t16_16_47.960518,1.0000,0.000464,0.003850,0.2122,No Drift,no_action
+1049,Phase2_DriftTest,dns2tcp_tunnel_99911_doh4_2020-03-31t16_39_19.580585,1.0000,0.000453,0.003774,0.2100,No Drift,no_action
+1050,Phase2_DriftTest,dns2tcp_tunnel_99911_doh4_2020-03-31t17_01_53.870580,1.0000,0.000442,0.003700,0.2078,No Drift,no_action
+1051,Phase2_DriftTest,dns2tcp_tunnel_99911_doh4_2020-03-31t17_24_26.246154,1.0000,0.000432,0.003627,0.2056,No Drift,no_action
+1052,Phase2_DriftTest,dns2tcp_tunnel_99911_doh4_2020-03-31t17_46_59.556531,1.0000,0.000422,0.003555,0.2035,No Drift,no_action
+1053,Phase2_DriftTest,dns2tcp_tunnel_99911_doh4_2020-03-31t18_09_30.285838,1.0000,0.000412,0.003485,0.2014,No Drift,no_action
+1054,Phase2_DriftTest,dns2tcp_tunnel_99911_doh4_2020-03-31t18_32_01.991167,1.0000,0.000403,0.003417,0.1993,No Drift,no_action
+1055,Phase2_DriftTest,dns2tcp_tunnel_99911_doh4_2020-03-31t18_54_33.141385,1.0000,0.000393,0.003349,0.1973,No Drift,no_action
+1056,Phase2_DriftTest,dns2tcp_tunnel_99911_doh4_2020-03-31t19_17_01.884574,1.0000,0.000384,0.003284,0.1953,No Drift,no_action
+1057,Phase2_DriftTest,dns2tcp_tunnel_99911_doh4_2020-03-31t19_39_31.206899,1.0000,0.000376,0.003219,0.1934,No Drift,no_action
+1058,Phase2_DriftTest,dns2tcp_tunnel_99911_doh4_2020-03-31t20_01_59.880409,1.0000,0.000367,0.003156,0.1915,No Drift,no_action
+1059,Phase2_DriftTest,dns2tcp_tunnel_99911_doh4_2020-03-31t20_24_28.781524,1.0000,0.000359,0.003094,0.1896,No Drift,no_action
+1060,Phase2_DriftTest,dns2tcp_tunnel_99911_doh4_2020-03-31t20_46_57.503479,1.0000,0.000351,0.003033,0.1877,No Drift,no_action
+1061,Phase2_DriftTest,dns2tcp_tunnel_99911_doh4_2020-03-31t21_09_26.882438,1.0000,0.000343,0.002973,0.1859,No Drift,no_action
+1062,Phase2_DriftTest,dns2tcp_tunnel_99911_doh4_2020-03-31t21_31_55.516666,1.0000,0.000335,0.002915,0.1841,No Drift,no_action
+1065,Phase2_DriftTest,dns2tcp_tunnel_99911_doh5_2020-03-30t20_14_47.066924,1.0000,0.000328,0.002858,0.1824,No Drift,no_action
+1066,Phase2_DriftTest,dns2tcp_tunnel_99911_doh5_2020-03-30t20_38_14.820181,1.0000,0.000320,0.002802,0.1807,No Drift,no_action
+1067,Phase2_DriftTest,dns2tcp_tunnel_99911_doh5_2020-03-30t21_01_54.717326,1.0000,0.000313,0.002747,0.1790,No Drift,no_action
+1068,Phase2_DriftTest,dns2tcp_tunnel_99911_doh5_2020-03-30t21_24_49.513869,1.0000,0.000306,0.002693,0.1773,No Drift,no_action
+1069,Phase2_DriftTest,dns2tcp_tunnel_99911_doh5_2020-03-30t21_47_38.863631,1.0000,0.000299,0.002640,0.1757,No Drift,no_action
+1070,Phase2_DriftTest,dns2tcp_tunnel_99911_doh5_2020-03-30t22_10_18.086914,1.0000,0.000293,0.002588,0.1741,No Drift,no_action
+1071,Phase2_DriftTest,dns2tcp_tunnel_99911_doh5_2020-03-30t22_32_56.108044,1.0000,0.000286,0.002538,0.1725,No Drift,no_action
+1072,Phase2_DriftTest,dns2tcp_tunnel_99911_doh5_2020-03-30t22_55_32.999974,1.0000,0.000280,0.002488,0.1710,No Drift,no_action
+1073,Phase2_DriftTest,dns2tcp_tunnel_99911_doh5_2020-03-30t23_18_06.019527,1.0000,0.000274,0.002439,0.1694,No Drift,no_action
+1074,Phase2_DriftTest,dns2tcp_tunnel_99911_doh5_2020-03-30t23_40_38.396515,1.0000,0.000268,0.002392,0.1679,No Drift,no_action
+1075,Phase2_DriftTest,dns2tcp_tunnel_99911_doh5_2020-03-31t00_03_15.354847,1.0000,0.000262,0.002345,0.1665,No Drift,no_action
+1076,Phase2_DriftTest,dns2tcp_tunnel_99911_doh5_2020-03-31t00_25_49.767097,1.0000,0.000257,0.002299,0.1650,No Drift,no_action
+1077,Phase2_DriftTest,dns2tcp_tunnel_99911_doh5_2020-03-31t00_48_27.637508,1.0000,0.000251,0.002254,0.1636,No Drift,no_action
+1078,Phase2_DriftTest,dns2tcp_tunnel_99911_doh5_2020-03-31t01_11_06.817592,1.0000,0.000246,0.002210,0.1622,No Drift,no_action
+1079,Phase2_DriftTest,dns2tcp_tunnel_99911_doh5_2020-03-31t01_33_46.066319,1.0000,0.000241,0.002167,0.1609,No Drift,no_action
+1080,Phase2_DriftTest,dns2tcp_tunnel_99911_doh5_2020-03-31t01_56_24.704902,1.0000,0.000236,0.002124,0.1595,No Drift,no_action
+1081,Phase2_DriftTest,dns2tcp_tunnel_99911_doh5_2020-03-31t02_19_03.747614,1.0000,0.000231,0.002083,0.1582,No Drift,no_action
+1082,Phase2_DriftTest,dns2tcp_tunnel_99911_doh5_2020-03-31t02_41_43.375022,1.0000,0.000226,0.002042,0.1569,No Drift,no_action
+1083,Phase2_DriftTest,dns2tcp_tunnel_99911_doh5_2020-03-31t03_04_17.438184,1.0000,0.000221,0.002002,0.1556,No Drift,no_action
+1084,Phase2_DriftTest,dns2tcp_tunnel_99911_doh5_2020-03-31t03_26_51.885024,1.0000,0.000216,0.001963,0.1544,No Drift,no_action
+1085,Phase2_DriftTest,dns2tcp_tunnel_99911_doh5_2020-03-31t03_49_26.449451,1.0000,0.000212,0.001925,0.1532,No Drift,no_action
+1086,Phase2_DriftTest,dns2tcp_tunnel_99911_doh5_2020-03-31t04_11_59.669982,1.0000,0.000207,0.001887,0.1519,No Drift,no_action
+1087,Phase2_DriftTest,dns2tcp_tunnel_99911_doh5_2020-03-31t04_34_33.748488,1.0000,0.000203,0.001850,0.1508,No Drift,no_action
+1088,Phase2_DriftTest,dns2tcp_tunnel_99911_doh5_2020-03-31t04_57_11.040809,1.0000,0.000199,0.001814,0.1496,No Drift,no_action
+1089,Phase2_DriftTest,dns2tcp_tunnel_99911_doh5_2020-03-31t05_19_49.142812,1.0000,0.000195,0.001779,0.1485,No Drift,no_action
+1090,Phase2_DriftTest,dns2tcp_tunnel_99911_doh5_2020-03-31t05_42_26.429856,1.0000,0.000191,0.001744,0.1473,No Drift,no_action
+1091,Phase2_DriftTest,dns2tcp_tunnel_99911_doh5_2020-03-31t06_05_06.145780,1.0000,0.000187,0.001710,0.1462,No Drift,no_action
+1092,Phase2_DriftTest,dns2tcp_tunnel_99911_doh5_2020-03-31t06_27_49.316218,1.0000,0.000183,0.001677,0.1451,No Drift,no_action
+1093,Phase2_DriftTest,dns2tcp_tunnel_99911_doh5_2020-03-31t06_50_28.336020,1.0000,0.000179,0.001644,0.1441,No Drift,no_action
+1094,Phase2_DriftTest,dns2tcp_tunnel_99911_doh5_2020-03-31t07_13_07.701264,1.0000,0.000176,0.001612,0.1430,No Drift,no_action
+1095,Phase2_DriftTest,dns2tcp_tunnel_99911_doh5_2020-03-31t07_35_45.600036,1.0000,0.000172,0.001581,0.1420,No Drift,no_action
+1096,Phase2_DriftTest,dns2tcp_tunnel_99911_doh5_2020-03-31t07_58_17.815878,1.0000,0.000169,0.001550,0.1410,No Drift,no_action
+1097,Phase2_DriftTest,dns2tcp_tunnel_99911_doh5_2020-03-31t08_20_52.502618,1.0000,0.000165,0.001520,0.1400,No Drift,no_action
+1098,Phase2_DriftTest,dns2tcp_tunnel_99911_doh5_2020-03-31t08_43_32.121667,1.0000,0.000162,0.001490,0.1390,No Drift,no_action
+1099,Phase2_DriftTest,dns2tcp_tunnel_99911_doh5_2020-03-31t09_06_10.027745,1.0000,0.000159,0.001461,0.1381,No Drift,no_action
+1100,Phase2_DriftTest,dns2tcp_tunnel_99911_doh5_2020-03-31t09_28_50.280954,1.0000,0.000156,0.001433,0.1371,No Drift,no_action
+1101,Phase2_DriftTest,dns2tcp_tunnel_99911_doh5_2020-03-31t09_51_35.397884,1.0000,0.000152,0.001405,0.1362,No Drift,no_action
+1102,Phase2_DriftTest,dns2tcp_tunnel_99911_doh5_2020-03-31t10_14_20.799417,1.0000,0.000149,0.001378,0.1353,No Drift,no_action
+1103,Phase2_DriftTest,dns2tcp_tunnel_99911_doh5_2020-03-31t10_37_03.275345,1.0000,0.000146,0.001351,0.1344,No Drift,no_action
+1104,Phase2_DriftTest,dns2tcp_tunnel_99911_doh5_2020-03-31t10_59_48.557431,1.0000,0.000144,0.001325,0.1335,No Drift,no_action
+1105,Phase2_DriftTest,dns2tcp_tunnel_99911_doh5_2020-03-31t11_22_27.753485,1.0000,0.000141,0.001299,0.1326,No Drift,no_action
+1106,Phase2_DriftTest,dns2tcp_tunnel_99911_doh5_2020-03-31t11_45_08.375348,1.0000,0.000138,0.001274,0.1318,No Drift,no_action
+1107,Phase2_DriftTest,dns2tcp_tunnel_99911_doh5_2020-03-31t12_07_48.088881,1.0000,0.000135,0.001249,0.1309,No Drift,no_action
+1108,Phase2_DriftTest,dns2tcp_tunnel_99911_doh5_2020-03-31t12_30_30.166265,1.0000,0.000133,0.001225,0.1301,No Drift,no_action
+1109,Phase2_DriftTest,dns2tcp_tunnel_99911_doh5_2020-03-31t12_53_10.553232,1.0000,0.000130,0.001201,0.1293,No Drift,no_action
+1110,Phase2_DriftTest,dns2tcp_tunnel_99911_doh5_2020-03-31t13_15_51.212013,1.0000,0.000128,0.001178,0.1285,No Drift,no_action
+1111,Phase2_DriftTest,dns2tcp_tunnel_99911_doh5_2020-03-31t13_38_29.907342,1.0000,0.000125,0.001155,0.1277,No Drift,no_action
+1112,Phase2_DriftTest,dns2tcp_tunnel_99911_doh5_2020-03-31t14_01_08.024519,1.0000,0.000123,0.001133,0.1269,No Drift,no_action
+1113,Phase2_DriftTest,dns2tcp_tunnel_99911_doh5_2020-03-31t14_23_46.991318,1.0000,0.000120,0.001111,0.1262,No Drift,no_action
+1114,Phase2_DriftTest,dns2tcp_tunnel_99911_doh5_2020-03-31t14_46_23.616307,1.0000,0.000118,0.001089,0.1254,No Drift,no_action
+1115,Phase2_DriftTest,dns2tcp_tunnel_99911_doh5_2020-03-31t15_09_02.264522,1.0000,0.000116,0.001068,0.1247,No Drift,no_action
+1116,Phase2_DriftTest,dns2tcp_tunnel_99911_doh5_2020-03-31t15_31_41.157872,1.0000,0.000113,0.001048,0.1240,No Drift,no_action
+1117,Phase2_DriftTest,dns2tcp_tunnel_99911_doh5_2020-03-31t15_54_13.872749,1.0000,0.000111,0.001027,0.1233,No Drift,no_action
+1118,Phase2_DriftTest,dns2tcp_tunnel_99911_doh5_2020-03-31t16_16_48.564305,1.0000,0.000109,0.001008,0.1226,No Drift,no_action
+1119,Phase2_DriftTest,dns2tcp_tunnel_99911_doh5_2020-03-31t16_39_21.293795,1.0000,0.000107,0.000988,0.1219,No Drift,no_action
+1120,Phase2_DriftTest,dns2tcp_tunnel_99911_doh5_2020-03-31t17_01_54.440976,1.0000,0.000105,0.000969,0.1212,No Drift,no_action
+1121,Phase2_DriftTest,dns2tcp_tunnel_99911_doh5_2020-03-31t17_24_27.026234,1.0000,0.000103,0.000950,0.1205,No Drift,no_action
+1122,Phase2_DriftTest,dns2tcp_tunnel_99911_doh5_2020-03-31t17_47_00.079566,1.0000,0.000101,0.000932,0.1199,No Drift,no_action
+1123,Phase2_DriftTest,dns2tcp_tunnel_99911_doh5_2020-03-31t18_09_30.831527,1.0000,0.000099,0.000914,0.1192,No Drift,no_action
+1124,Phase2_DriftTest,dns2tcp_tunnel_99911_doh5_2020-03-31t18_32_02.653368,1.0000,0.000097,0.000896,0.1186,No Drift,no_action
+1125,Phase2_DriftTest,dns2tcp_tunnel_99911_doh5_2020-03-31t18_54_33.691707,1.0000,0.000096,0.000879,0.1180,No Drift,no_action
+1126,Phase2_DriftTest,dns2tcp_tunnel_99911_doh5_2020-03-31t19_17_02.468757,1.0000,0.000094,0.000862,0.1173,No Drift,no_action
+1127,Phase2_DriftTest,dns2tcp_tunnel_99911_doh5_2020-03-31t19_39_31.734409,1.0000,0.000092,0.000846,0.1167,No Drift,no_action
+1128,Phase2_DriftTest,dns2tcp_tunnel_99911_doh5_2020-03-31t20_02_00.448784,1.0000,0.000090,0.000829,0.1161,No Drift,no_action
+1129,Phase2_DriftTest,dns2tcp_tunnel_99911_doh5_2020-03-31t20_24_29.402428,1.0000,0.000089,0.000813,0.1155,No Drift,no_action
+1130,Phase2_DriftTest,dns2tcp_tunnel_99911_doh5_2020-03-31t20_46_58.071006,1.0000,0.000087,0.000798,0.1150,No Drift,no_action
+1131,Phase2_DriftTest,dns2tcp_tunnel_99911_doh5_2020-03-31t21_09_27.421183,1.0000,0.000085,0.000782,0.1144,No Drift,no_action
+1132,Phase2_DriftTest,dns2tcp_tunnel_99911_doh5_2020-03-31t21_31_56.060923,1.0000,0.000084,0.000767,0.1138,No Drift,no_action
+1138,Phase2_DriftTest,dns2tcp_tunnel_99911_doh6_2020-03-30t21_24_51.489459,1.0000,0.000082,0.000752,0.1133,No Drift,no_action
+1139,Phase2_DriftTest,dns2tcp_tunnel_99911_doh6_2020-03-30t21_47_39.943336,1.0000,0.000081,0.000738,0.1127,No Drift,no_action
+1140,Phase2_DriftTest,dns2tcp_tunnel_99911_doh6_2020-03-30t22_10_19.166754,1.0000,0.000079,0.000724,0.1122,No Drift,no_action
+1141,Phase2_DriftTest,dns2tcp_tunnel_99911_doh6_2020-03-30t22_32_56.725156,1.0000,0.000078,0.000710,0.1116,No Drift,no_action
+1142,Phase2_DriftTest,dns2tcp_tunnel_99911_doh6_2020-03-30t22_55_33.619458,1.0000,0.000076,0.000696,0.1111,No Drift,no_action
+1143,Phase2_DriftTest,dns2tcp_tunnel_99911_doh6_2020-03-30t23_18_06.585549,1.0000,0.000075,0.000683,0.1106,No Drift,no_action
+1144,Phase2_DriftTest,dns2tcp_tunnel_99911_doh6_2020-03-30t23_40_39.288373,1.0000,0.000074,0.000670,0.1101,No Drift,no_action
+1145,Phase2_DriftTest,dns2tcp_tunnel_99911_doh6_2020-03-31t00_03_16.099192,1.0000,0.000072,0.000657,0.1096,No Drift,no_action
+1146,Phase2_DriftTest,dns2tcp_tunnel_99911_doh6_2020-03-31t00_25_50.546561,1.0000,0.000071,0.000644,0.1091,No Drift,no_action
+1147,Phase2_DriftTest,dns2tcp_tunnel_99911_doh6_2020-03-31t00_48_28.686991,1.0000,0.000070,0.000632,0.1086,No Drift,no_action
+1148,Phase2_DriftTest,dns2tcp_tunnel_99911_doh6_2020-03-31t01_11_07.748215,1.0000,0.000069,0.000620,0.1081,No Drift,no_action
+1149,Phase2_DriftTest,dns2tcp_tunnel_99911_doh6_2020-03-31t01_33_46.956507,1.0000,0.000067,0.000608,0.1077,No Drift,no_action
+1150,Phase2_DriftTest,dns2tcp_tunnel_99911_doh6_2020-03-31t01_56_25.850655,1.0000,0.000066,0.000597,0.1072,No Drift,no_action
+1151,Phase2_DriftTest,dns2tcp_tunnel_99911_doh6_2020-03-31t02_19_05.121578,1.0000,0.000065,0.000585,0.1067,No Drift,no_action
+1152,Phase2_DriftTest,dns2tcp_tunnel_99911_doh6_2020-03-31t02_41_44.145998,1.0000,0.000064,0.000574,0.1063,No Drift,no_action
+1153,Phase2_DriftTest,dns2tcp_tunnel_99911_doh6_2020-03-31t03_04_18.233861,1.0000,0.000063,0.000563,0.1058,No Drift,no_action
+1154,Phase2_DriftTest,dns2tcp_tunnel_99911_doh6_2020-03-31t03_26_52.536922,1.0000,0.000062,0.000552,0.1054,No Drift,no_action
+1155,Phase2_DriftTest,dns2tcp_tunnel_99911_doh6_2020-03-31t03_49_27.316622,1.0000,0.000060,0.000542,0.1049,No Drift,no_action
+1156,Phase2_DriftTest,dns2tcp_tunnel_99911_doh6_2020-03-31t04_12_00.383468,1.0000,0.000060,0.000531,0.1045,No Drift,no_action
+1157,Phase2_DriftTest,dns2tcp_tunnel_99911_doh6_2020-03-31t04_34_34.445292,1.0000,0.000058,0.000521,0.1041,No Drift,no_action
+1158,Phase2_DriftTest,dns2tcp_tunnel_99911_doh6_2020-03-31t04_57_11.803400,1.0000,0.000057,0.000511,0.1037,No Drift,no_action
+1159,Phase2_DriftTest,dns2tcp_tunnel_99911_doh6_2020-03-31t05_19_49.945770,1.0000,0.000056,0.000501,0.1032,No Drift,no_action
+1160,Phase2_DriftTest,dns2tcp_tunnel_99911_doh6_2020-03-31t05_42_27.291374,1.0000,0.000055,0.000492,0.1028,No Drift,no_action
+1161,Phase2_DriftTest,dns2tcp_tunnel_99911_doh6_2020-03-31t06_05_07.152498,1.0000,0.000054,0.000483,0.1024,No Drift,no_action
+1162,Phase2_DriftTest,dns2tcp_tunnel_99911_doh6_2020-03-31t06_27_50.264106,1.0000,0.000054,0.000473,0.1020,No Drift,no_action
+1163,Phase2_DriftTest,dns2tcp_tunnel_99911_doh6_2020-03-31t06_50_29.179761,1.0000,0.000053,0.000464,0.1016,No Drift,no_action
+1164,Phase2_DriftTest,dns2tcp_tunnel_99911_doh6_2020-03-31t07_13_08.585381,1.0000,0.000052,0.000456,0.1012,No Drift,no_action
+1165,Phase2_DriftTest,dns2tcp_tunnel_99911_doh6_2020-03-31t07_35_46.193424,1.0000,0.000051,0.000447,0.1009,No Drift,no_action
+1166,Phase2_DriftTest,dns2tcp_tunnel_99911_doh6_2020-03-31t07_58_18.398947,1.0000,0.000050,0.000438,0.1005,No Drift,no_action
+1167,Phase2_DriftTest,dns2tcp_tunnel_99911_doh6_2020-03-31t08_20_53.437924,1.0000,0.000049,0.000430,0.1001,No Drift,no_action
+1168,Phase2_DriftTest,dns2tcp_tunnel_99911_doh6_2020-03-31t08_43_32.683927,1.0000,0.000048,0.000422,0.0997,No Drift,no_action
+1169,Phase2_DriftTest,dns2tcp_tunnel_99911_doh6_2020-03-31t09_06_10.840382,1.0000,0.000048,0.000414,0.0994,No Drift,no_action
+1170,Phase2_DriftTest,dns2tcp_tunnel_99911_doh6_2020-03-31t09_28_51.098248,1.0000,0.000047,0.000406,0.0990,No Drift,no_action
+1171,Phase2_DriftTest,dns2tcp_tunnel_99911_doh6_2020-03-31t09_51_36.341084,1.0000,0.000046,0.000398,0.0987,No Drift,no_action
+1172,Phase2_DriftTest,dns2tcp_tunnel_99911_doh6_2020-03-31t10_14_21.755037,1.0000,0.000045,0.000391,0.0983,No Drift,no_action
+1173,Phase2_DriftTest,dns2tcp_tunnel_99911_doh6_2020-03-31t10_37_04.205773,1.0000,0.000044,0.000383,0.0980,No Drift,no_action
+1174,Phase2_DriftTest,dns2tcp_tunnel_99911_doh6_2020-03-31t10_59_49.665077,1.0000,0.000044,0.000376,0.0976,No Drift,no_action
+1175,Phase2_DriftTest,dns2tcp_tunnel_99911_doh6_2020-03-31t11_22_28.592219,1.0000,0.000043,0.000369,0.0973,No Drift,no_action
+1176,Phase2_DriftTest,dns2tcp_tunnel_99911_doh6_2020-03-31t11_45_09.251008,1.0000,0.000042,0.000362,0.0969,No Drift,no_action
+1177,Phase2_DriftTest,dns2tcp_tunnel_99911_doh6_2020-03-31t12_07_48.711499,1.0000,0.000042,0.000355,0.0966,No Drift,no_action
+1178,Phase2_DriftTest,dns2tcp_tunnel_99911_doh6_2020-03-31t12_30_30.866459,1.0000,0.000041,0.000349,0.0963,No Drift,no_action
+1179,Phase2_DriftTest,dns2tcp_tunnel_99911_doh6_2020-03-31t12_53_11.392993,1.0000,0.000040,0.000342,0.0959,No Drift,no_action
+1180,Phase2_DriftTest,dns2tcp_tunnel_99911_doh6_2020-03-31t13_15_51.874625,1.0000,0.000040,0.000335,0.0956,No Drift,no_action
+1181,Phase2_DriftTest,dns2tcp_tunnel_99911_doh6_2020-03-31t13_38_30.623894,1.0000,0.000039,0.000329,0.0953,No Drift,no_action
+1182,Phase2_DriftTest,dns2tcp_tunnel_99911_doh6_2020-03-31t14_01_08.965757,1.0000,0.000038,0.000323,0.0950,No Drift,no_action
+1183,Phase2_DriftTest,dns2tcp_tunnel_99911_doh6_2020-03-31t14_23_47.918870,1.0000,0.000038,0.000317,0.0947,No Drift,no_action
+1184,Phase2_DriftTest,dns2tcp_tunnel_99911_doh6_2020-03-31t14_46_24.297561,1.0000,0.000037,0.000311,0.0944,No Drift,no_action
+1185,Phase2_DriftTest,dns2tcp_tunnel_99911_doh6_2020-03-31t15_09_02.921119,1.0000,0.000036,0.000305,0.0941,No Drift,no_action
+1186,Phase2_DriftTest,dns2tcp_tunnel_99911_doh6_2020-03-31t15_31_41.724959,1.0000,0.000036,0.000299,0.0938,No Drift,no_action
+1187,Phase2_DriftTest,dns2tcp_tunnel_99911_doh6_2020-03-31t15_54_14.943769,1.0000,0.000035,0.000294,0.0935,No Drift,no_action
+1188,Phase2_DriftTest,dns2tcp_tunnel_99911_doh6_2020-03-31t16_16_49.137404,1.0000,0.000035,0.000288,0.0932,No Drift,no_action
+1189,Phase2_DriftTest,dns2tcp_tunnel_99911_doh6_2020-03-31t16_39_21.923638,1.0000,0.000034,0.000283,0.0929,No Drift,no_action
+1190,Phase2_DriftTest,dns2tcp_tunnel_99911_doh6_2020-03-31t17_01_55.035405,1.0000,0.000034,0.000277,0.0926,No Drift,no_action
+1191,Phase2_DriftTest,dns2tcp_tunnel_99911_doh6_2020-03-31t17_24_27.823226,1.0000,0.000033,0.000272,0.0923,No Drift,no_action
+1192,Phase2_DriftTest,dns2tcp_tunnel_99911_doh6_2020-03-31t17_47_00.668252,1.0000,0.000033,0.000267,0.0920,No Drift,no_action
+1193,Phase2_DriftTest,dns2tcp_tunnel_99911_doh6_2020-03-31t18_09_31.553417,1.0000,0.000032,0.000262,0.0918,No Drift,no_action
+1194,Phase2_DriftTest,dns2tcp_tunnel_99911_doh6_2020-03-31t18_32_03.330213,1.0000,0.000032,0.000257,0.0915,No Drift,no_action
+1195,Phase2_DriftTest,dns2tcp_tunnel_99911_doh6_2020-03-31t18_54_34.270791,1.0000,0.000031,0.000252,0.0912,No Drift,no_action
+1196,Phase2_DriftTest,dns2tcp_tunnel_99911_doh6_2020-03-31t19_17_03.145439,1.0000,0.000031,0.000248,0.0910,No Drift,no_action
+1197,Phase2_DriftTest,dns2tcp_tunnel_99911_doh6_2020-03-31t19_39_32.292510,1.0000,0.000030,0.000243,0.0907,No Drift,no_action
+1198,Phase2_DriftTest,dns2tcp_tunnel_99911_doh6_2020-03-31t20_02_00.977419,1.0000,0.000030,0.000238,0.0904,No Drift,no_action
+1199,Phase2_DriftTest,dns2tcp_tunnel_99911_doh6_2020-03-31t20_24_29.967299,1.0000,0.000029,0.000234,0.0902,No Drift,no_action
+1200,Phase2_DriftTest,dns2tcp_tunnel_99911_doh6_2020-03-31t20_46_58.632290,1.0000,0.000029,0.000230,0.0899,No Drift,no_action
+1201,Phase2_DriftTest,dns2tcp_tunnel_99911_doh6_2020-03-31t21_09_27.980171,1.0000,0.000028,0.000225,0.0897,No Drift,no_action
+1202,Phase2_DriftTest,dns2tcp_tunnel_99911_doh6_2020-03-31t21_31_56.616700,1.0000,0.000028,0.000221,0.0894,No Drift,no_action
+1205,Phase2_DriftTest,dns2tcp_tunnel_99911_doh7_2020-03-30t20_14_49.173267,1.0000,0.000028,0.000217,0.0892,No Drift,no_action
+1207,Phase2_DriftTest,dns2tcp_tunnel_99911_doh7_2020-03-30t21_01_59.671719,1.0000,0.000027,0.000213,0.0889,No Drift,no_action
+1208,Phase2_DriftTest,dns2tcp_tunnel_99911_doh7_2020-03-30t21_24_52.943488,1.0000,0.000027,0.000209,0.0887,No Drift,no_action
+1209,Phase2_DriftTest,dns2tcp_tunnel_99911_doh7_2020-03-30t21_47_41.385441,1.0000,0.000026,0.000205,0.0884,No Drift,no_action
+1210,Phase2_DriftTest,dns2tcp_tunnel_99911_doh7_2020-03-30t22_10_20.561488,1.0000,0.000026,0.000201,0.0882,No Drift,no_action
+1211,Phase2_DriftTest,dns2tcp_tunnel_99911_doh7_2020-03-30t22_32_57.357800,1.0000,0.000026,0.000198,0.0879,No Drift,no_action
+1212,Phase2_DriftTest,dns2tcp_tunnel_99911_doh7_2020-03-30t22_55_34.443823,1.0000,0.000025,0.000194,0.0877,No Drift,no_action
+1213,Phase2_DriftTest,dns2tcp_tunnel_99911_doh7_2020-03-30t23_18_07.368184,1.0000,0.000025,0.000190,0.0875,No Drift,no_action
+1214,Phase2_DriftTest,dns2tcp_tunnel_99911_doh7_2020-03-30t23_40_39.890364,1.0000,0.000025,0.000187,0.0872,No Drift,no_action
+1215,Phase2_DriftTest,dns2tcp_tunnel_99911_doh7_2020-03-31t00_03_16.805639,1.0000,0.000024,0.000183,0.0870,No Drift,no_action
+1216,Phase2_DriftTest,dns2tcp_tunnel_99911_doh7_2020-03-31t00_25_51.347577,1.0000,0.000024,0.000180,0.0868,No Drift,no_action
+1217,Phase2_DriftTest,dns2tcp_tunnel_99911_doh7_2020-03-31t00_48_29.523207,1.0000,0.000023,0.000177,0.0866,No Drift,no_action
+1218,Phase2_DriftTest,dns2tcp_tunnel_99911_doh7_2020-03-31t01_11_08.492820,1.0000,0.000023,0.000173,0.0863,No Drift,no_action
+1219,Phase2_DriftTest,dns2tcp_tunnel_99911_doh7_2020-03-31t01_33_47.857093,1.0000,0.000023,0.000170,0.0861,No Drift,no_action
+1220,Phase2_DriftTest,dns2tcp_tunnel_99911_doh7_2020-03-31t01_56_26.557187,1.0000,0.000022,0.000167,0.0859,No Drift,no_action
+1221,Phase2_DriftTest,dns2tcp_tunnel_99911_doh7_2020-03-31t02_19_05.764946,1.0000,0.000022,0.000164,0.0857,No Drift,no_action
+1222,Phase2_DriftTest,dns2tcp_tunnel_99911_doh7_2020-03-31t02_41_44.830593,1.0000,0.000022,0.000161,0.0855,No Drift,no_action
+1223,Phase2_DriftTest,dns2tcp_tunnel_99911_doh7_2020-03-31t03_04_18.957268,1.0000,0.000022,0.000158,0.0853,No Drift,no_action
+1224,Phase2_DriftTest,dns2tcp_tunnel_99911_doh7_2020-03-31t03_26_53.437918,1.0000,0.000021,0.000155,0.0850,No Drift,no_action
+1225,Phase2_DriftTest,dns2tcp_tunnel_99911_doh7_2020-03-31t03_49_27.914193,1.0000,0.000021,0.000152,0.0848,No Drift,no_action
+1226,Phase2_DriftTest,dns2tcp_tunnel_99911_doh7_2020-03-31t04_12_00.913995,1.0000,0.000021,0.000150,0.0846,No Drift,no_action
+1227,Phase2_DriftTest,dns2tcp_tunnel_99911_doh7_2020-03-31t04_34_35.132493,1.0000,0.000020,0.000147,0.0844,No Drift,no_action
+1228,Phase2_DriftTest,dns2tcp_tunnel_99911_doh7_2020-03-31t04_57_12.722590,1.0000,0.000020,0.000144,0.0842,No Drift,no_action
+1229,Phase2_DriftTest,dns2tcp_tunnel_99911_doh7_2020-03-31t05_19_50.610860,1.0000,0.000020,0.000141,0.0840,No Drift,no_action
+1230,Phase2_DriftTest,dns2tcp_tunnel_99911_doh7_2020-03-31t05_42_28.386711,1.0000,0.000020,0.000139,0.0838,No Drift,no_action
+1231,Phase2_DriftTest,dns2tcp_tunnel_99911_doh7_2020-03-31t06_05_08.422722,1.0000,0.000019,0.000136,0.0836,No Drift,no_action
+1232,Phase2_DriftTest,dns2tcp_tunnel_99911_doh7_2020-03-31t06_27_51.129008,1.0000,0.000019,0.000134,0.0834,No Drift,no_action
+1233,Phase2_DriftTest,dns2tcp_tunnel_99911_doh7_2020-03-31t06_50_30.080642,1.0000,0.000019,0.000131,0.0832,No Drift,no_action
+1234,Phase2_DriftTest,dns2tcp_tunnel_99911_doh7_2020-03-31t07_13_09.652235,1.0000,0.000019,0.000129,0.0830,No Drift,no_action
+1235,Phase2_DriftTest,dns2tcp_tunnel_99911_doh7_2020-03-31t07_35_46.829022,1.0000,0.000018,0.000127,0.0829,No Drift,no_action
+1236,Phase2_DriftTest,dns2tcp_tunnel_99911_doh7_2020-03-31t07_58_19.114052,1.0000,0.000018,0.000124,0.0827,No Drift,no_action
+1237,Phase2_DriftTest,dns2tcp_tunnel_99911_doh7_2020-03-31t08_20_54.395084,1.0000,0.000018,0.000122,0.0825,No Drift,no_action
+1238,Phase2_DriftTest,dns2tcp_tunnel_99911_doh7_2020-03-31t08_43_33.376821,1.0000,0.000018,0.000120,0.0823,No Drift,no_action
+1239,Phase2_DriftTest,dns2tcp_tunnel_99911_doh7_2020-03-31t09_06_11.595774,1.0000,0.000017,0.000117,0.0821,No Drift,no_action
+1240,Phase2_DriftTest,dns2tcp_tunnel_99911_doh7_2020-03-31t09_28_51.810309,1.0000,0.000017,0.000115,0.0819,No Drift,no_action
+1241,Phase2_DriftTest,dns2tcp_tunnel_99911_doh7_2020-03-31t09_51_37.443737,1.0000,0.000017,0.000113,0.0817,No Drift,no_action
+1242,Phase2_DriftTest,dns2tcp_tunnel_99911_doh7_2020-03-31t10_14_22.550361,1.0000,0.000017,0.000111,0.0816,No Drift,no_action
+1243,Phase2_DriftTest,dns2tcp_tunnel_99911_doh7_2020-03-31t10_37_05.342808,1.0000,0.000016,0.000109,0.0814,No Drift,no_action
+1244,Phase2_DriftTest,dns2tcp_tunnel_99911_doh7_2020-03-31t10_59_50.655419,1.0000,0.000016,0.000107,0.0812,No Drift,no_action
+1245,Phase2_DriftTest,dns2tcp_tunnel_99911_doh7_2020-03-31t11_22_29.239699,1.0000,0.000016,0.000105,0.0810,No Drift,no_action
+1246,Phase2_DriftTest,dns2tcp_tunnel_99911_doh7_2020-03-31t11_45_10.118117,1.0000,0.000016,0.000103,0.0809,No Drift,no_action
+1247,Phase2_DriftTest,dns2tcp_tunnel_99911_doh7_2020-03-31t12_07_49.916638,1.0000,0.000016,0.000101,0.0807,No Drift,no_action
+1248,Phase2_DriftTest,dns2tcp_tunnel_99911_doh7_2020-03-31t12_30_31.671923,1.0000,0.000015,0.000100,0.0805,No Drift,no_action
+1249,Phase2_DriftTest,dns2tcp_tunnel_99911_doh7_2020-03-31t12_53_12.507754,1.0000,0.000015,0.000098,0.0803,No Drift,no_action
+1250,Phase2_DriftTest,dns2tcp_tunnel_99911_doh7_2020-03-31t13_15_52.638600,1.0000,0.000015,0.000096,0.0802,No Drift,no_action
+1251,Phase2_DriftTest,dns2tcp_tunnel_99911_doh7_2020-03-31t13_38_31.288210,1.0000,0.000015,0.000094,0.0800,No Drift,no_action
+1252,Phase2_DriftTest,dns2tcp_tunnel_99911_doh7_2020-03-31t14_01_09.804392,1.0000,0.000015,0.000093,0.0798,No Drift,no_action
+1253,Phase2_DriftTest,dns2tcp_tunnel_99911_doh7_2020-03-31t14_23_48.878151,1.0000,0.000015,0.000091,0.0797,No Drift,no_action
+1254,Phase2_DriftTest,dns2tcp_tunnel_99911_doh7_2020-03-31t14_46_24.950370,1.0000,0.000014,0.000089,0.0795,No Drift,no_action
+1255,Phase2_DriftTest,dns2tcp_tunnel_99911_doh7_2020-03-31t15_09_03.780880,1.0000,0.000014,0.000088,0.0794,No Drift,no_action
+1256,Phase2_DriftTest,dns2tcp_tunnel_99911_doh7_2020-03-31t15_31_42.365922,1.0000,0.000014,0.000086,0.0792,No Drift,no_action
+1257,Phase2_DriftTest,dns2tcp_tunnel_99911_doh7_2020-03-31t15_54_15.540254,1.0000,0.000014,0.000085,0.0790,No Drift,no_action
+1258,Phase2_DriftTest,dns2tcp_tunnel_99911_doh7_2020-03-31t16_16_49.699273,1.0000,0.000014,0.000083,0.0789,No Drift,no_action
+1259,Phase2_DriftTest,dns2tcp_tunnel_99911_doh7_2020-03-31t16_39_22.774564,1.0000,0.000014,0.000082,0.0787,No Drift,no_action
+1260,Phase2_DriftTest,dns2tcp_tunnel_99911_doh7_2020-03-31t17_01_55.644383,1.0000,0.000013,0.000080,0.0786,No Drift,no_action
+1261,Phase2_DriftTest,dns2tcp_tunnel_99911_doh7_2020-03-31t17_24_28.548213,1.0000,0.000013,0.000079,0.0784,No Drift,no_action
+1262,Phase2_DriftTest,dns2tcp_tunnel_99911_doh7_2020-03-31t17_47_01.366984,1.0000,0.000013,0.000077,0.0783,No Drift,no_action
+1263,Phase2_DriftTest,dns2tcp_tunnel_99911_doh7_2020-03-31t18_09_32.173254,1.0000,0.000013,0.000076,0.0781,No Drift,no_action
+1264,Phase2_DriftTest,dns2tcp_tunnel_99911_doh7_2020-03-31t18_32_04.105361,1.0000,0.000013,0.000075,0.0780,No Drift,no_action
+1265,Phase2_DriftTest,dns2tcp_tunnel_99911_doh7_2020-03-31t18_54_34.834488,1.0000,0.000013,0.000073,0.0778,No Drift,no_action
+1266,Phase2_DriftTest,dns2tcp_tunnel_99911_doh7_2020-03-31t19_17_03.735558,1.0000,0.000012,0.000072,0.0777,No Drift,no_action
+1267,Phase2_DriftTest,dns2tcp_tunnel_99911_doh7_2020-03-31t19_39_32.862246,1.0000,0.000012,0.000071,0.0775,No Drift,no_action
+1268,Phase2_DriftTest,dns2tcp_tunnel_99911_doh7_2020-03-31t20_02_01.591641,1.0000,0.000012,0.000069,0.0774,No Drift,no_action
+1269,Phase2_DriftTest,dns2tcp_tunnel_99911_doh7_2020-03-31t20_24_30.542131,1.0000,0.000012,0.000068,0.0772,No Drift,no_action
+1270,Phase2_DriftTest,dns2tcp_tunnel_99911_doh7_2020-03-31t20_46_59.214894,1.0000,0.000012,0.000067,0.0771,No Drift,no_action
+1271,Phase2_DriftTest,dns2tcp_tunnel_99911_doh7_2020-03-31t21_09_28.551211,1.0000,0.000012,0.000066,0.0769,No Drift,no_action
+1272,Phase2_DriftTest,dns2tcp_tunnel_99911_doh7_2020-03-31t21_31_57.172591,1.0000,0.000012,0.000064,0.0768,No Drift,no_action
+1275,Phase2_DriftTest,dns2tcp_tunnel_99911_doh8_2020-03-30t20_14_51.470608,1.0000,0.000011,0.000063,0.0766,No Drift,no_action
+1277,Phase2_DriftTest,dns2tcp_tunnel_99911_doh8_2020-03-30t21_02_00.738486,1.0000,0.000011,0.000062,0.0765,No Drift,no_action
+1278,Phase2_DriftTest,dns2tcp_tunnel_99911_doh8_2020-03-30t21_24_54.576323,1.0000,0.000011,0.000061,0.0764,No Drift,no_action
+1279,Phase2_DriftTest,dns2tcp_tunnel_99911_doh8_2020-03-30t21_47_42.421408,1.0000,0.000011,0.000060,0.0762,No Drift,no_action
+1280,Phase2_DriftTest,dns2tcp_tunnel_99911_doh8_2020-03-30t22_10_21.266576,1.0000,0.000011,0.000059,0.0761,No Drift,no_action
+1281,Phase2_DriftTest,dns2tcp_tunnel_99911_doh8_2020-03-30t22_32_57.993146,1.0000,0.000011,0.000058,0.0760,No Drift,no_action
+1282,Phase2_DriftTest,dns2tcp_tunnel_99911_doh8_2020-03-30t22_55_35.132123,1.0000,0.000011,0.000057,0.0758,No Drift,no_action
+1283,Phase2_DriftTest,dns2tcp_tunnel_99911_doh8_2020-03-30t23_18_07.928481,1.0000,0.000011,0.000056,0.0757,No Drift,no_action
+1284,Phase2_DriftTest,dns2tcp_tunnel_99911_doh8_2020-03-30t23_40_40.624138,1.0000,0.000011,0.000055,0.0756,No Drift,no_action
+1285,Phase2_DriftTest,dns2tcp_tunnel_99911_doh8_2020-03-31t00_03_17.611011,1.0000,0.000011,0.000054,0.0754,No Drift,no_action
+1286,Phase2_DriftTest,dns2tcp_tunnel_99911_doh8_2020-03-31t00_25_52.100308,1.0000,0.000010,0.000053,0.0753,No Drift,no_action
+1287,Phase2_DriftTest,dns2tcp_tunnel_99911_doh8_2020-03-31t00_48_30.411379,1.0000,0.000010,0.000052,0.0752,No Drift,no_action
+1288,Phase2_DriftTest,dns2tcp_tunnel_99911_doh8_2020-03-31t01_11_09.393319,1.0000,0.000010,0.000051,0.0750,No Drift,no_action
+1289,Phase2_DriftTest,dns2tcp_tunnel_99911_doh8_2020-03-31t01_33_48.724025,1.0000,0.000010,0.000050,0.0749,No Drift,no_action
+1290,Phase2_DriftTest,dns2tcp_tunnel_99911_doh8_2020-03-31t01_56_27.250018,1.0000,0.000010,0.000050,0.0748,No Drift,no_action
+1291,Phase2_DriftTest,dns2tcp_tunnel_99911_doh8_2020-03-31t02_19_06.595866,1.0000,0.000010,0.000049,0.0746,No Drift,no_action
+1292,Phase2_DriftTest,dns2tcp_tunnel_99911_doh8_2020-03-31t02_41_45.639382,1.0000,0.000010,0.000048,0.0745,No Drift,no_action
+1293,Phase2_DriftTest,dns2tcp_tunnel_99911_doh8_2020-03-31t03_04_19.589257,1.0000,0.000010,0.000047,0.0744,No Drift,no_action
+1294,Phase2_DriftTest,dns2tcp_tunnel_99911_doh8_2020-03-31t03_26_54.056503,1.0000,0.000010,0.000046,0.0743,No Drift,no_action
+1295,Phase2_DriftTest,dns2tcp_tunnel_99911_doh8_2020-03-31t03_49_28.584063,1.0000,0.000010,0.000045,0.0741,No Drift,no_action
+1296,Phase2_DriftTest,dns2tcp_tunnel_99911_doh8_2020-03-31t04_12_01.651240,1.0000,0.000009,0.000045,0.0740,No Drift,no_action
+1297,Phase2_DriftTest,dns2tcp_tunnel_99911_doh8_2020-03-31t04_34_36.083477,1.0000,0.000009,0.000044,0.0739,No Drift,no_action
+1298,Phase2_DriftTest,dns2tcp_tunnel_99911_doh8_2020-03-31t04_57_13.425380,1.0000,0.000009,0.000043,0.0738,No Drift,no_action
+1299,Phase2_DriftTest,dns2tcp_tunnel_99911_doh8_2020-03-31t05_19_51.230217,1.0000,0.000009,0.000042,0.0737,No Drift,no_action
+1300,Phase2_DriftTest,dns2tcp_tunnel_99911_doh8_2020-03-31t05_42_29.262438,1.0000,0.000009,0.000041,0.0735,No Drift,no_action
+1301,Phase2_DriftTest,dns2tcp_tunnel_99911_doh8_2020-03-31t06_05_09.628915,1.0000,0.000009,0.000041,0.0734,No Drift,no_action
+1302,Phase2_DriftTest,dns2tcp_tunnel_99911_doh8_2020-03-31t06_27_51.806402,1.0000,0.000009,0.000040,0.0733,No Drift,no_action
+1303,Phase2_DriftTest,dns2tcp_tunnel_99911_doh8_2020-03-31t06_50_30.771926,1.0000,0.000009,0.000039,0.0732,No Drift,no_action
+1304,Phase2_DriftTest,dns2tcp_tunnel_99911_doh8_2020-03-31t07_13_10.572225,1.0000,0.000009,0.000039,0.0731,No Drift,no_action
+1305,Phase2_DriftTest,dns2tcp_tunnel_99911_doh8_2020-03-31t07_35_47.510815,1.0000,0.000009,0.000038,0.0729,No Drift,no_action
+1306,Phase2_DriftTest,dns2tcp_tunnel_99911_doh8_2020-03-31t07_58_19.750520,1.0000,0.000008,0.000037,0.0728,No Drift,no_action
+1307,Phase2_DriftTest,dns2tcp_tunnel_99911_doh8_2020-03-31t08_20_55.163890,1.0000,0.000009,0.000037,0.0727,No Drift,no_action
+1308,Phase2_DriftTest,dns2tcp_tunnel_99911_doh8_2020-03-31t08_43_34.038675,1.0000,0.000008,0.000036,0.0726,No Drift,no_action
+1309,Phase2_DriftTest,dns2tcp_tunnel_99911_doh8_2020-03-31t09_06_12.592040,1.0000,0.000008,0.000036,0.0725,No Drift,no_action
+1310,Phase2_DriftTest,dns2tcp_tunnel_99911_doh8_2020-03-31t09_28_52.613583,1.0000,0.000008,0.000035,0.0724,No Drift,no_action
+1311,Phase2_DriftTest,dns2tcp_tunnel_99911_doh8_2020-03-31t09_51_38.241947,1.0000,0.000008,0.000034,0.0723,No Drift,no_action
+1312,Phase2_DriftTest,dns2tcp_tunnel_99911_doh8_2020-03-31t10_14_23.310072,1.0000,0.000008,0.000034,0.0722,No Drift,no_action
+1313,Phase2_DriftTest,dns2tcp_tunnel_99911_doh8_2020-03-31t10_37_06.125652,1.0000,0.000008,0.000033,0.0720,No Drift,no_action
+1314,Phase2_DriftTest,dns2tcp_tunnel_99911_doh8_2020-03-31t10_59_51.615780,1.0000,0.000008,0.000033,0.0719,No Drift,no_action
+1315,Phase2_DriftTest,dns2tcp_tunnel_99911_doh8_2020-03-31t11_22_30.033636,1.0000,0.000008,0.000032,0.0718,No Drift,no_action
+1316,Phase2_DriftTest,dns2tcp_tunnel_99911_doh8_2020-03-31t11_45_11.186864,1.0000,0.000008,0.000032,0.0717,No Drift,no_action
+1317,Phase2_DriftTest,dns2tcp_tunnel_99911_doh8_2020-03-31t12_07_50.869515,1.0000,0.000008,0.000031,0.0716,No Drift,no_action
+1318,Phase2_DriftTest,dns2tcp_tunnel_99911_doh8_2020-03-31t12_30_32.703291,1.0000,0.000008,0.000031,0.0715,No Drift,no_action
+1319,Phase2_DriftTest,dns2tcp_tunnel_99911_doh8_2020-03-31t12_53_13.269707,1.0000,0.000008,0.000030,0.0714,No Drift,no_action
+1320,Phase2_DriftTest,dns2tcp_tunnel_99911_doh8_2020-03-31t13_15_53.269026,1.0000,0.000008,0.000030,0.0713,No Drift,no_action
+1321,Phase2_DriftTest,dns2tcp_tunnel_99911_doh8_2020-03-31t13_38_32.046407,1.0000,0.000007,0.000029,0.0712,No Drift,no_action
+1322,Phase2_DriftTest,dns2tcp_tunnel_99911_doh8_2020-03-31t14_01_10.712396,1.0000,0.000007,0.000029,0.0711,No Drift,no_action
+1323,Phase2_DriftTest,dns2tcp_tunnel_99911_doh8_2020-03-31t14_23_49.759990,1.0000,0.000007,0.000028,0.0710,No Drift,no_action
+1324,Phase2_DriftTest,dns2tcp_tunnel_99911_doh8_2020-03-31t14_46_26.222137,1.0000,0.000007,0.000028,0.0709,No Drift,no_action
+1325,Phase2_DriftTest,dns2tcp_tunnel_99911_doh8_2020-03-31t15_09_04.441514,1.0000,0.000007,0.000027,0.0708,No Drift,no_action
+1326,Phase2_DriftTest,dns2tcp_tunnel_99911_doh8_2020-03-31t15_31_42.999338,1.0000,0.000007,0.000027,0.0707,No Drift,no_action
+1327,Phase2_DriftTest,dns2tcp_tunnel_99911_doh8_2020-03-31t15_54_16.139731,1.0000,0.000007,0.000026,0.0706,No Drift,no_action
+1328,Phase2_DriftTest,dns2tcp_tunnel_99911_doh8_2020-03-31t16_16_50.343739,1.0000,0.000007,0.000026,0.0705,No Drift,no_action
+1329,Phase2_DriftTest,dns2tcp_tunnel_99911_doh8_2020-03-31t16_39_23.350801,1.0000,0.000007,0.000025,0.0704,No Drift,no_action
+1330,Phase2_DriftTest,dns2tcp_tunnel_99911_doh8_2020-03-31t17_01_56.292157,1.0000,0.000007,0.000025,0.0703,No Drift,no_action
+1331,Phase2_DriftTest,dns2tcp_tunnel_99911_doh8_2020-03-31t17_24_29.234105,1.0000,0.000007,0.000025,0.0702,No Drift,no_action
+1332,Phase2_DriftTest,dns2tcp_tunnel_99911_doh8_2020-03-31t17_47_01.964264,1.0000,0.000007,0.000024,0.0701,No Drift,no_action
+1333,Phase2_DriftTest,dns2tcp_tunnel_99911_doh8_2020-03-31t18_09_32.816870,1.0000,0.000007,0.000024,0.0700,No Drift,no_action
+1334,Phase2_DriftTest,dns2tcp_tunnel_99911_doh8_2020-03-31t18_32_04.737407,1.0000,0.000007,0.000023,0.0699,No Drift,no_action
+1335,Phase2_DriftTest,dns2tcp_tunnel_99911_doh8_2020-03-31t18_54_35.402265,1.0000,0.000007,0.000023,0.0698,No Drift,no_action
+1336,Phase2_DriftTest,dns2tcp_tunnel_99911_doh8_2020-03-31t19_17_04.309083,1.0000,0.000007,0.000023,0.0697,No Drift,no_action
+1337,Phase2_DriftTest,dns2tcp_tunnel_99911_doh8_2020-03-31t19_39_33.420257,1.0000,0.000007,0.000022,0.0696,No Drift,no_action
+1338,Phase2_DriftTest,dns2tcp_tunnel_99911_doh8_2020-03-31t20_02_02.137655,1.0000,0.000007,0.000022,0.0695,No Drift,no_action
+1339,Phase2_DriftTest,dns2tcp_tunnel_99911_doh8_2020-03-31t20_24_31.131069,1.0000,0.000007,0.000021,0.0694,No Drift,no_action
+1340,Phase2_DriftTest,dns2tcp_tunnel_99911_doh8_2020-03-31t20_46_59.777602,1.0000,0.000007,0.000021,0.0693,No Drift,no_action
+1341,Phase2_DriftTest,dns2tcp_tunnel_99911_doh8_2020-03-31t21_09_29.104274,1.0000,0.000006,0.000021,0.0692,No Drift,no_action
+1342,Phase2_DriftTest,dns2tcp_tunnel_99911_doh8_2020-03-31t21_31_57.734655,1.0000,0.000006,0.000021,0.0691,No Drift,no_action
+1345,Phase2_DriftTest,dns2tcp_tunnel_99911_doh9_2020-03-30t20_14_52.809596,1.0000,0.000006,0.000020,0.0690,No Drift,no_action
+1347,Phase2_DriftTest,dns2tcp_tunnel_99911_doh9_2020-03-30t21_02_02.760741,1.0000,0.000006,0.000020,0.0689,No Drift,no_action
+1348,Phase2_DriftTest,dns2tcp_tunnel_99911_doh9_2020-03-30t21_24_56.147351,1.0000,0.000006,0.000019,0.0688,No Drift,no_action
+1349,Phase2_DriftTest,dns2tcp_tunnel_99911_doh9_2020-03-30t21_47_43.620073,1.0000,0.000006,0.000019,0.0687,No Drift,no_action
+1350,Phase2_DriftTest,dns2tcp_tunnel_99911_doh9_2020-03-30t22_10_22.485082,1.0000,0.000006,0.000019,0.0686,No Drift,no_action
+1351,Phase2_DriftTest,dns2tcp_tunnel_99911_doh9_2020-03-30t22_32_58.926092,1.0000,0.000006,0.000018,0.0686,No Drift,no_action
+1352,Phase2_DriftTest,dns2tcp_tunnel_99911_doh9_2020-03-30t22_55_35.922582,1.0000,0.000006,0.000018,0.0685,No Drift,no_action
+1353,Phase2_DriftTest,dns2tcp_tunnel_99911_doh9_2020-03-30t23_18_08.456445,1.0000,0.000006,0.000018,0.0684,No Drift,no_action
+1354,Phase2_DriftTest,dns2tcp_tunnel_99911_doh9_2020-03-30t23_40_41.304006,1.0000,0.000006,0.000018,0.0683,No Drift,no_action
+1355,Phase2_DriftTest,dns2tcp_tunnel_99911_doh9_2020-03-31t00_03_18.385040,1.0000,0.000006,0.000017,0.0682,No Drift,no_action
+1356,Phase2_DriftTest,dns2tcp_tunnel_99911_doh9_2020-03-31t00_25_52.792677,1.0000,0.000006,0.000017,0.0681,No Drift,no_action
+1357,Phase2_DriftTest,dns2tcp_tunnel_99911_doh9_2020-03-31t00_48_31.394415,1.0000,0.000006,0.000017,0.0680,No Drift,no_action
+1358,Phase2_DriftTest,dns2tcp_tunnel_99911_doh9_2020-03-31t01_11_10.452750,1.0000,0.000006,0.000017,0.0679,No Drift,no_action
+1359,Phase2_DriftTest,dns2tcp_tunnel_99911_doh9_2020-03-31t01_33_49.435345,1.0000,0.000006,0.000016,0.0678,No Drift,no_action
+1360,Phase2_DriftTest,dns2tcp_tunnel_99911_doh9_2020-03-31t01_56_27.962607,1.0000,0.000006,0.000016,0.0678,No Drift,no_action
+1361,Phase2_DriftTest,dns2tcp_tunnel_99911_doh9_2020-03-31t02_19_07.781972,1.0000,0.000006,0.000016,0.0677,No Drift,no_action
+1362,Phase2_DriftTest,dns2tcp_tunnel_99911_doh9_2020-03-31t02_41_46.784537,1.0000,0.000006,0.000016,0.0676,No Drift,no_action
+1363,Phase2_DriftTest,dns2tcp_tunnel_99911_doh9_2020-03-31t03_04_20.279861,1.0000,0.000006,0.000015,0.0675,No Drift,no_action
+1364,Phase2_DriftTest,dns2tcp_tunnel_99911_doh9_2020-03-31t03_26_54.942364,1.0000,0.000006,0.000015,0.0674,No Drift,no_action
+1365,Phase2_DriftTest,dns2tcp_tunnel_99911_doh9_2020-03-31t03_49_29.389619,1.0000,0.000006,0.000015,0.0673,No Drift,no_action
+1366,Phase2_DriftTest,dns2tcp_tunnel_99911_doh9_2020-03-31t04_12_02.442157,1.0000,0.000006,0.000015,0.0672,No Drift,no_action
+1367,Phase2_DriftTest,dns2tcp_tunnel_99911_doh9_2020-03-31t04_34_36.641790,1.0000,0.000006,0.000014,0.0672,No Drift,no_action
+1368,Phase2_DriftTest,dns2tcp_tunnel_99911_doh9_2020-03-31t04_57_14.125469,1.0000,0.000005,0.000014,0.0671,No Drift,no_action
+1369,Phase2_DriftTest,dns2tcp_tunnel_99911_doh9_2020-03-31t05_19_51.935658,1.0000,0.000006,0.000014,0.0670,No Drift,no_action
+1370,Phase2_DriftTest,dns2tcp_tunnel_99911_doh9_2020-03-31t05_42_30.128274,1.0000,0.000005,0.000014,0.0669,No Drift,no_action
+1371,Phase2_DriftTest,dns2tcp_tunnel_99911_doh9_2020-03-31t06_05_10.352209,1.0000,0.000005,0.000013,0.0668,No Drift,no_action
+1372,Phase2_DriftTest,dns2tcp_tunnel_99911_doh9_2020-03-31t06_27_52.615728,1.0000,0.000005,0.000013,0.0668,No Drift,no_action
+1373,Phase2_DriftTest,dns2tcp_tunnel_99911_doh9_2020-03-31t06_50_31.656916,1.0000,0.000005,0.000013,0.0667,No Drift,no_action
+1374,Phase2_DriftTest,dns2tcp_tunnel_99911_doh9_2020-03-31t07_13_11.448882,1.0000,0.000005,0.000013,0.0666,No Drift,no_action
+1375,Phase2_DriftTest,dns2tcp_tunnel_99911_doh9_2020-03-31t07_35_48.097102,1.0000,0.000005,0.000013,0.0665,No Drift,no_action
+1376,Phase2_DriftTest,dns2tcp_tunnel_99911_doh9_2020-03-31t07_58_20.312248,1.0000,0.000005,0.000013,0.0664,No Drift,no_action
+1377,Phase2_DriftTest,dns2tcp_tunnel_99911_doh9_2020-03-31t08_20_55.877077,1.0000,0.000005,0.000012,0.0664,No Drift,no_action
+1378,Phase2_DriftTest,dns2tcp_tunnel_99911_doh9_2020-03-31t08_43_34.618382,1.0000,0.000005,0.000012,0.0663,No Drift,no_action
+1379,Phase2_DriftTest,dns2tcp_tunnel_99911_doh9_2020-03-31t09_06_13.377670,1.0000,0.000005,0.000012,0.0662,No Drift,no_action
+1380,Phase2_DriftTest,dns2tcp_tunnel_99911_doh9_2020-03-31t09_28_53.482953,1.0000,0.000005,0.000012,0.0661,No Drift,no_action
+1381,Phase2_DriftTest,dns2tcp_tunnel_99911_doh9_2020-03-31t09_51_39.000122,1.0000,0.000005,0.000012,0.0660,No Drift,no_action
+1382,Phase2_DriftTest,dns2tcp_tunnel_99911_doh9_2020-03-31t10_14_24.124126,1.0000,0.000005,0.000011,0.0660,No Drift,no_action
+1383,Phase2_DriftTest,dns2tcp_tunnel_99911_doh9_2020-03-31t10_37_07.029921,1.0000,0.000005,0.000011,0.0659,No Drift,no_action
+1384,Phase2_DriftTest,dns2tcp_tunnel_99911_doh9_2020-03-31t10_59_52.428711,1.0000,0.000005,0.000011,0.0658,No Drift,no_action
+1385,Phase2_DriftTest,dns2tcp_tunnel_99911_doh9_2020-03-31t11_22_30.628558,1.0000,0.000005,0.000011,0.0657,No Drift,no_action
+1386,Phase2_DriftTest,dns2tcp_tunnel_99911_doh9_2020-03-31t11_45_11.734458,1.0000,0.000005,0.000011,0.0657,No Drift,no_action
+1387,Phase2_DriftTest,dns2tcp_tunnel_99911_doh9_2020-03-31t12_07_51.901280,1.0000,0.000005,0.000011,0.0656,No Drift,no_action
+1388,Phase2_DriftTest,dns2tcp_tunnel_99911_doh9_2020-03-31t12_30_33.476647,1.0000,0.000005,0.000010,0.0655,No Drift,no_action
+1389,Phase2_DriftTest,dns2tcp_tunnel_99911_doh9_2020-03-31t12_53_14.017984,1.0000,0.000005,0.000010,0.0654,No Drift,no_action
+1390,Phase2_DriftTest,dns2tcp_tunnel_99911_doh9_2020-03-31t13_15_54.068348,1.0000,0.000005,0.000010,0.0654,No Drift,no_action
+1391,Phase2_DriftTest,dns2tcp_tunnel_99911_doh9_2020-03-31t13_38_33.085788,1.0000,0.000005,0.000010,0.0653,No Drift,no_action
+1392,Phase2_DriftTest,dns2tcp_tunnel_99911_doh9_2020-03-31t14_01_11.428570,1.0000,0.000005,0.000010,0.0652,No Drift,no_action
+1393,Phase2_DriftTest,dns2tcp_tunnel_99911_doh9_2020-03-31t14_23_50.434623,1.0000,0.000005,0.000010,0.0651,No Drift,no_action
+1394,Phase2_DriftTest,dns2tcp_tunnel_99911_doh9_2020-03-31t14_46_26.854622,1.0000,0.000005,0.000010,0.0651,No Drift,no_action
+1395,Phase2_DriftTest,dns2tcp_tunnel_99911_doh9_2020-03-31t15_09_05.277927,1.0000,0.000005,0.000010,0.0650,No Drift,no_action
+1396,Phase2_DriftTest,dns2tcp_tunnel_99911_doh9_2020-03-31t15_31_43.722635,1.0000,0.000005,0.000009,0.0649,No Drift,no_action
+1397,Phase2_DriftTest,dns2tcp_tunnel_99911_doh9_2020-03-31t15_54_16.900576,1.0000,0.000005,0.000009,0.0648,No Drift,no_action
+1398,Phase2_DriftTest,dns2tcp_tunnel_99911_doh9_2020-03-31t16_16_50.879366,1.0000,0.000005,0.000009,0.0648,No Drift,no_action
+1399,Phase2_DriftTest,dns2tcp_tunnel_99911_doh9_2020-03-31t16_39_23.873308,1.0000,0.000005,0.000009,0.0647,No Drift,no_action
+1400,Phase2_DriftTest,dns2tcp_tunnel_99911_doh9_2020-03-31t17_01_56.862907,1.0000,0.000005,0.000009,0.0646,No Drift,no_action
+1401,Phase2_DriftTest,dns2tcp_tunnel_99911_doh9_2020-03-31t17_24_29.830051,1.0000,0.000005,0.000009,0.0646,No Drift,no_action
+1402,Phase2_DriftTest,dns2tcp_tunnel_99911_doh9_2020-03-31t17_47_02.591551,1.0000,0.000005,0.000008,0.0645,No Drift,no_action
+1403,Phase2_DriftTest,dns2tcp_tunnel_99911_doh9_2020-03-31t18_09_33.365463,1.0000,0.000005,0.000008,0.0644,No Drift,no_action
+1404,Phase2_DriftTest,dns2tcp_tunnel_99911_doh9_2020-03-31t18_32_05.416372,1.0000,0.000005,0.000008,0.0644,No Drift,no_action
+1405,Phase2_DriftTest,dns2tcp_tunnel_99911_doh9_2020-03-31t18_54_35.932274,1.0000,0.000005,0.000008,0.0643,No Drift,no_action
+1406,Phase2_DriftTest,dns2tcp_tunnel_99911_doh9_2020-03-31t19_17_04.826488,1.0000,0.000004,0.000008,0.0642,No Drift,no_action
+1407,Phase2_DriftTest,dns2tcp_tunnel_99911_doh9_2020-03-31t19_39_33.959670,1.0000,0.000005,0.000008,0.0641,No Drift,no_action
+1408,Phase2_DriftTest,dns2tcp_tunnel_99911_doh9_2020-03-31t20_02_02.786537,1.0000,0.000004,0.000008,0.0641,No Drift,no_action
+1409,Phase2_DriftTest,dns2tcp_tunnel_99911_doh9_2020-03-31t20_24_31.666820,1.0000,0.000004,0.000008,0.0640,No Drift,no_action
+1410,Phase2_DriftTest,dns2tcp_tunnel_99911_doh9_2020-03-31t20_47_00.303308,1.0000,0.000005,0.000008,0.0639,No Drift,no_action
+1411,Phase2_DriftTest,dns2tcp_tunnel_99911_doh9_2020-03-31t21_09_29.630687,1.0000,0.000004,0.000008,0.0639,No Drift,no_action
+1412,Phase2_DriftTest,dns2tcp_tunnel_99911_doh9_2020-03-31t21_31_58.233935,1.0000,0.000004,0.000007,0.0638,No Drift,no_action
+2189,Phase2_DriftTest,dns2tcp_tunnel_dnsgoogle_doh1_2020-03-30t21_36_09.690883,1.0000,0.000004,0.000007,0.0637,No Drift,no_action
+2190,Phase2_DriftTest,dns2tcp_tunnel_dnsgoogle_doh1_2020-03-30t21_58_56.471447,1.0000,0.000004,0.000007,0.0637,No Drift,no_action
+2191,Phase2_DriftTest,dns2tcp_tunnel_dnsgoogle_doh1_2020-03-30t22_21_36.287132,1.0000,0.000004,0.000007,0.0636,No Drift,no_action
+2192,Phase2_DriftTest,dns2tcp_tunnel_dnsgoogle_doh1_2020-03-30t22_44_11.534265,1.0000,0.000004,0.000007,0.0635,No Drift,no_action
+2193,Phase2_DriftTest,dns2tcp_tunnel_dnsgoogle_doh1_2020-03-30t23_06_48.684617,1.0000,0.000004,0.000007,0.0635,No Drift,no_action
+2194,Phase2_DriftTest,dns2tcp_tunnel_dnsgoogle_doh1_2020-03-30t23_29_20.285021,1.0000,0.000004,0.000007,0.0634,No Drift,no_action
+2195,Phase2_DriftTest,dns2tcp_tunnel_dnsgoogle_doh1_2020-03-30t23_51_54.109441,1.0000,0.000004,0.000007,0.0633,No Drift,no_action
+2196,Phase2_DriftTest,dns2tcp_tunnel_dnsgoogle_doh1_2020-03-31t00_14_30.704252,1.0000,0.000004,0.000007,0.0633,No Drift,no_action
+2197,Phase2_DriftTest,dns2tcp_tunnel_dnsgoogle_doh1_2020-03-31t00_37_06.632933,1.0000,0.000004,0.000007,0.0632,No Drift,no_action
+2198,Phase2_DriftTest,dns2tcp_tunnel_dnsgoogle_doh1_2020-03-31t00_59_44.356060,1.0000,0.000004,0.000006,0.0631,No Drift,no_action
+2200,Phase2_DriftTest,dns2tcp_tunnel_dnsgoogle_doh1_2020-03-31t01_45_03.481825,1.0000,0.000004,0.000006,0.0631,No Drift,no_action
+2201,Phase2_DriftTest,dns2tcp_tunnel_dnsgoogle_doh1_2020-03-31t02_07_41.186710,1.0000,0.000004,0.000006,0.0630,No Drift,no_action
+2202,Phase2_DriftTest,dns2tcp_tunnel_dnsgoogle_doh1_2020-03-31t02_30_20.871673,1.0000,0.000004,0.000006,0.0630,No Drift,no_action
+2204,Phase2_DriftTest,dns2tcp_tunnel_dnsgoogle_doh1_2020-03-31t03_15_32.549029,1.0000,0.000004,0.000006,0.0629,No Drift,no_action
+2206,Phase2_DriftTest,dns2tcp_tunnel_dnsgoogle_doh1_2020-03-31t04_00_41.872403,1.0000,0.000004,0.000006,0.0628,No Drift,no_action
+2207,Phase2_DriftTest,dns2tcp_tunnel_dnsgoogle_doh1_2020-03-31t04_23_15.669898,1.0000,0.000004,0.000006,0.0628,No Drift,no_action
+2208,Phase2_DriftTest,dns2tcp_tunnel_dnsgoogle_doh1_2020-03-31t04_45_50.180619,1.0000,0.000004,0.000006,0.0627,No Drift,no_action
+2210,Phase2_DriftTest,dns2tcp_tunnel_dnsgoogle_doh1_2020-03-31t05_31_04.753509,1.0000,0.000004,0.000006,0.0626,No Drift,no_action
+2211,Phase2_DriftTest,dns2tcp_tunnel_dnsgoogle_doh1_2020-03-31t05_53_43.910604,1.0000,0.000004,0.000006,0.0626,No Drift,no_action
+2217,Phase2_DriftTest,dns2tcp_tunnel_dnsgoogle_doh1_2020-03-31t08_09_32.659893,1.0000,0.000004,0.000006,0.0625,No Drift,no_action
+2218,Phase2_DriftTest,dns2tcp_tunnel_dnsgoogle_doh1_2020-03-31t08_32_10.263570,1.0000,0.000004,0.000005,0.0625,No Drift,no_action
+2219,Phase2_DriftTest,dns2tcp_tunnel_dnsgoogle_doh1_2020-03-31t08_54_46.842786,1.0000,0.000004,0.000005,0.0624,No Drift,no_action
+2220,Phase2_DriftTest,dns2tcp_tunnel_dnsgoogle_doh1_2020-03-31t09_17_26.825207,1.0000,0.000004,0.000005,0.0623,No Drift,no_action
+2221,Phase2_DriftTest,dns2tcp_tunnel_dnsgoogle_doh1_2020-03-31t09_40_07.127341,1.0000,0.000004,0.000005,0.0623,No Drift,no_action
+2222,Phase2_DriftTest,dns2tcp_tunnel_dnsgoogle_doh1_2020-03-31t10_02_53.782582,1.0000,0.000004,0.000005,0.0622,No Drift,no_action
+2223,Phase2_DriftTest,dns2tcp_tunnel_dnsgoogle_doh1_2020-03-31t10_25_38.335574,1.0000,0.000004,0.000005,0.0621,No Drift,no_action
+2224,Phase2_DriftTest,dns2tcp_tunnel_dnsgoogle_doh1_2020-03-31t10_48_20.931152,1.0000,0.000004,0.000005,0.0621,No Drift,no_action
+2225,Phase2_DriftTest,dns2tcp_tunnel_dnsgoogle_doh1_2020-03-31t11_11_05.964976,1.0000,0.000004,0.000005,0.0620,No Drift,no_action
+2227,Phase2_DriftTest,dns2tcp_tunnel_dnsgoogle_doh1_2020-03-31t11_56_25.853278,1.0000,0.000004,0.000005,0.0620,No Drift,no_action
+2231,Phase2_DriftTest,dns2tcp_tunnel_dnsgoogle_doh1_2020-03-31t13_27_06.939265,1.0000,0.000004,0.000005,0.0619,No Drift,no_action
+2233,Phase2_DriftTest,dns2tcp_tunnel_dnsgoogle_doh1_2020-03-31t14_12_26.027109,1.0000,0.000004,0.000005,0.0619,No Drift,no_action
+2235,Phase2_DriftTest,dns2tcp_tunnel_dnsgoogle_doh1_2020-03-31t14_57_39.274643,1.0000,0.000004,0.000005,0.0618,No Drift,no_action
+2239,Phase2_DriftTest,dns2tcp_tunnel_dnsgoogle_doh1_2020-03-31t16_28_02.705170,1.0000,0.000004,0.000005,0.0617,No Drift,no_action
+2240,Phase2_DriftTest,dns2tcp_tunnel_dnsgoogle_doh1_2020-03-31t16_50_35.746837,1.0000,0.000004,0.000005,0.0617,No Drift,no_action
+2245,Phase2_DriftTest,dns2tcp_tunnel_dnsgoogle_doh1_2020-03-31t18_43_17.851915,1.0000,0.000004,0.000005,0.0616,No Drift,no_action
+2246,Phase2_DriftTest,dns2tcp_tunnel_dnsgoogle_doh1_2020-03-31t19_05_47.316030,1.0000,0.000004,0.000005,0.0616,No Drift,no_action
+2247,Phase2_DriftTest,dns2tcp_tunnel_dnsgoogle_doh1_2020-03-31t19_28_16.646149,1.0000,0.000004,0.000004,0.0615,No Drift,no_action
+2259,Phase2_DriftTest,dns2tcp_tunnel_dnsgoogle_doh2_2020-03-30t21_36_11.567490,1.0000,0.000004,0.000005,0.0614,No Drift,no_action
+2261,Phase2_DriftTest,dns2tcp_tunnel_dnsgoogle_doh2_2020-03-30t22_21_37.778622,1.0000,0.000004,0.000004,0.0614,No Drift,no_action
+2262,Phase2_DriftTest,dns2tcp_tunnel_dnsgoogle_doh2_2020-03-30t22_44_12.678225,1.0000,0.000004,0.000004,0.0613,No Drift,no_action
+2263,Phase2_DriftTest,dns2tcp_tunnel_dnsgoogle_doh2_2020-03-30t23_06_49.893700,1.0000,0.000004,0.000004,0.0613,No Drift,no_action
+2264,Phase2_DriftTest,dns2tcp_tunnel_dnsgoogle_doh2_2020-03-30t23_29_21.351185,1.0000,0.000004,0.000004,0.0612,No Drift,no_action
+2265,Phase2_DriftTest,dns2tcp_tunnel_dnsgoogle_doh2_2020-03-30t23_51_55.063314,1.0000,0.000004,0.000004,0.0612,No Drift,no_action
+2266,Phase2_DriftTest,dns2tcp_tunnel_dnsgoogle_doh2_2020-03-31t00_14_31.516711,1.0000,0.000004,0.000004,0.0611,No Drift,no_action
+2267,Phase2_DriftTest,dns2tcp_tunnel_dnsgoogle_doh2_2020-03-31t00_37_07.573623,1.0000,0.000004,0.000004,0.0610,No Drift,no_action
+2274,Phase2_DriftTest,dns2tcp_tunnel_dnsgoogle_doh2_2020-03-31t03_15_33.687397,1.0000,0.000004,0.000004,0.0610,No Drift,no_action
+2281,Phase2_DriftTest,dns2tcp_tunnel_dnsgoogle_doh2_2020-03-31t05_53_44.753217,1.0000,0.000004,0.000004,0.0609,No Drift,no_action
+2283,Phase2_DriftTest,dns2tcp_tunnel_dnsgoogle_doh2_2020-03-31t06_39_07.092262,1.0000,0.000004,0.000004,0.0609,No Drift,no_action
+2286,Phase2_DriftTest,dns2tcp_tunnel_dnsgoogle_doh2_2020-03-31t07_47_01.217282,1.0000,0.000004,0.000004,0.0608,No Drift,no_action
+2287,Phase2_DriftTest,dns2tcp_tunnel_dnsgoogle_doh2_2020-03-31t08_09_33.662101,1.0000,0.000004,0.000004,0.0608,No Drift,no_action
+2293,Phase2_DriftTest,dns2tcp_tunnel_dnsgoogle_doh2_2020-03-31t10_25_39.920552,1.0000,0.000004,0.000004,0.0607,No Drift,no_action
+2297,Phase2_DriftTest,dns2tcp_tunnel_dnsgoogle_doh2_2020-03-31t11_56_27.006518,1.0000,0.000004,0.000004,0.0607,No Drift,no_action
+2298,Phase2_DriftTest,dns2tcp_tunnel_dnsgoogle_doh2_2020-03-31t12_19_06.749563,1.0000,0.000004,0.000004,0.0606,No Drift,no_action
+2306,Phase2_DriftTest,dns2tcp_tunnel_dnsgoogle_doh2_2020-03-31t15_20_21.493950,1.0000,0.000004,0.000004,0.0606,No Drift,no_action
+2309,Phase2_DriftTest,dns2tcp_tunnel_dnsgoogle_doh2_2020-03-31t16_28_04.338973,1.0000,0.000004,0.000004,0.0605,No Drift,no_action
+2313,Phase2_DriftTest,dns2tcp_tunnel_dnsgoogle_doh2_2020-03-31t17_58_15.145156,1.0000,0.000004,0.000003,0.0604,No Drift,no_action
+2314,Phase2_DriftTest,dns2tcp_tunnel_dnsgoogle_doh2_2020-03-31t18_20_46.141326,1.0000,0.000004,0.000004,0.0604,No Drift,no_action
+2316,Phase2_DriftTest,dns2tcp_tunnel_dnsgoogle_doh2_2020-03-31t19_05_48.137201,1.0000,0.000004,0.000003,0.0603,No Drift,no_action
+2318,Phase2_DriftTest,dns2tcp_tunnel_dnsgoogle_doh2_2020-03-31t19_50_46.247010,1.0000,0.000004,0.000003,0.0603,No Drift,no_action
+2319,Phase2_DriftTest,dns2tcp_tunnel_dnsgoogle_doh2_2020-03-31t20_13_15.174349,1.0000,0.000004,0.000003,0.0602,No Drift,no_action
+7859,Phase2_DriftTest,dump.003ce1,1.0000,0.000003,0.000004,0.0602,No Drift,no_action
+7860,Phase2_DriftTest,dump.1da2a3,1.0000,0.000003,0.000004,0.0597,No Drift,no_action
+7861,Phase2_DriftTest,dump.218564,1.0000,0.000003,0.000004,0.0595,No Drift,no_action
+7862,Phase2_DriftTest,dump.22e976,1.0000,0.000003,0.000004,0.0594,No Drift,no_action
+7863,Phase2_DriftTest,dump.6dbe55,1.0000,0.000003,0.000004,0.0589,No Drift,no_action
+7864,Phase2_DriftTest,dump.e022b7,1.0000,0.000003,0.000004,0.0584,No Drift,no_action
+7865,Phase2_DriftTest,dump_00001_20200111222621.25436d,1.0000,0.000003,0.000004,0.0583,No Drift,no_action
+7866,Phase2_DriftTest,dump_00001_20200113100617.0246b4,1.0000,0.000003,0.000004,0.0582,No Drift,no_action
+7867,Phase2_DriftTest,dump_00001_20200113152847.4df77c,1.0000,0.000003,0.000004,0.0580,No Drift,no_action
+7868,Phase2_DriftTest,dump_00001_20200114102945.0c2a9f,1.0000,0.000003,0.000004,0.0579,No Drift,no_action
+7869,Phase2_DriftTest,dump_00002_20200111232233.4dd21e,1.0000,0.000003,0.000004,0.0578,No Drift,no_action
+7870,Phase2_DriftTest,dump_00002_20200113111300.07d779,1.0000,0.000003,0.000004,0.0576,No Drift,no_action
+7871,Phase2_DriftTest,dump_00002_20200113162614.325f51,1.0000,0.000003,0.000004,0.0574,No Drift,no_action
+7872,Phase2_DriftTest,dump_00002_20200114114901.69adea,1.0000,0.000003,0.000004,0.0573,No Drift,no_action
+7873,Phase2_DriftTest,dump_00003_20200112004539.77b31c,1.0000,0.000003,0.000004,0.0572,No Drift,no_action
+7874,Phase2_DriftTest,dump_00003_20200113120939.b9054d,1.0000,0.000003,0.000004,0.0571,No Drift,no_action
+7875,Phase2_DriftTest,dump_00003_20200113182754.df1632,1.0000,0.000003,0.000004,0.0569,No Drift,no_action
+7876,Phase2_DriftTest,dump_00003_20200114130936.15d035,1.0000,0.000003,0.000004,0.0568,No Drift,no_action
+7877,Phase2_DriftTest,dump_00004_20200112015042.b7f055,1.0000,0.000003,0.000004,0.0567,No Drift,no_action
+7878,Phase2_DriftTest,dump_00004_20200113132407.77383d,1.0000,0.000003,0.000004,0.0566,No Drift,no_action
+7879,Phase2_DriftTest,dump_00004_20200113193921.586656,1.0000,0.000003,0.000004,0.0566,No Drift,no_action
+7880,Phase2_DriftTest,dump_00004_20200114141606.1045ab,1.0000,0.000003,0.000004,0.0564,No Drift,no_action
+7881,Phase2_DriftTest,dump_00005_20200112025337.89ee30,1.0000,0.000003,0.000004,0.0563,No Drift,no_action
+7882,Phase2_DriftTest,dump_00005_20200113142226.bed703,1.0000,0.000003,0.000004,0.0562,No Drift,no_action
+7883,Phase2_DriftTest,dump_00005_20200113205730.4a72d7,1.0000,0.000003,0.000004,0.0561,No Drift,no_action
+7884,Phase2_DriftTest,dump_00005_20200114153502.914300,1.0000,0.000003,0.000004,0.0560,No Drift,no_action
+7885,Phase2_DriftTest,dump_00006_20200112040340.8f88b6,1.0000,0.000003,0.000004,0.0559,No Drift,no_action
+7886,Phase2_DriftTest,dump_00007_20200112051950.b79397,1.0000,0.000003,0.000004,0.0558,No Drift,no_action
+7887,Phase2_DriftTest,dump_00008_20200112063544.ae26a3,1.0000,0.000003,0.000004,0.0557,No Drift,no_action
+7888,Phase2_DriftTest,dump_00009_20200113074803.23a7aa,1.0000,0.000003,0.000004,0.0556,No Drift,no_action
+13399,Phase2_DriftTest,l1-doh,1.0000,0.000003,0.000005,0.0555,No Drift,no_action
+13400,Phase2_DriftTest,l1-nondoh,1.0000,0.000003,0.000007,0.0545,No Drift,no_action
+13401,Phase2_DriftTest,l2-benign,0.0000,0.000002,0.000007,0.0518,No Drift,no_action
+13402,Phase2_DriftTest,l2-malicious,1.0000,0.000002,0.000008,0.0519,No Drift,no_action
+13403,Phase2_DriftTest,02-14-2018,0.0001,0.691024,0.000746,0.9854,No Drift,no_action
+13404,Phase2_DriftTest,02-15-2018,0.0009,0.629988,0.002729,1.0819,No Drift,no_action
+13405,Phase2_DriftTest,02-16-2018,0.0000,0.779592,0.004195,0.6258,No Drift,no_action
+13406,Phase2_DriftTest,02-20-2018,0.0117,0.874734,0.019415,1.3026,Type II: Decision Shift,fine_tune
+13407,Phase2_DriftTest,02-21-2018,0.0663,0.867869,0.022381,1.0160,Type II: Decision Shift,fine_tune
+13408,Phase2_DriftTest,02-22-2018,0.1242,0.933779,0.027261,0.4957,Type III: Severe Concept Drift,fine_tune
+13409,Phase2_DriftTest,02-23-2018,0.1665,0.941737,0.030775,0.3086,Type III: Severe Concept Drift,fine_tune
+13410,Phase2_DriftTest,02-28-2018,0.4702,0.884196,0.032153,0.2091,Type II: Decision Shift,fine_tune
+13411,Phase2_DriftTest,03-01-2018,0.4182,0.886555,0.032365,0.1567,Type II: Decision Shift,fine_tune
+13412,Phase2_DriftTest,03-02-2018,0.1403,0.887338,0.035064,0.1841,Type II: Decision Shift,fine_tune
+13413,Phase3_DomainShift,evse-b-hpc-kernel-events-combined,0.3499,0.878952,0.033389,0.2533,Type II: Decision Shift,fine_tune
+13414,Phase3_DomainShift,evse-b-powercombined,0.1102,0.742577,0.032371,0.3468,Type II: Decision Shift,fine_tune

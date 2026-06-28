@@ -1,0 +1,38 @@
+2026-04-02 19:25:14,318 - 🔥 BẮT ĐẦU CHIẾN DỊCH TIỀN XỬ LÝ TIME SERIES (CÓ BẢO TOÀN ĐẶC TRƯNG & MAP NHÃN) 🔥
+2026-04-02 19:25:14,318 - 
+==================================================
+🌟 GIAI ĐOẠN: Phase1_Train
+==================================================
+2026-04-02 19:25:14,319 - 
+🚀 ĐANG XỬ LÝ: Phase1_Train -> CICIoT2023 (169 files)
+2026-04-02 19:33:27,744 - ✅ Hoàn thành CICIoT2023 - Tổng: 46,686,579 mẫu hợp lệ.
+2026-04-02 19:33:27,748 - 
+🚀 ĐANG XỬ LÝ: Phase1_Train -> CICDDoS2019Full (18 files)
+2026-04-02 19:59:24,784 - ✅ Hoàn thành CICDDoS2019Full - Tổng: 70,427,637 mẫu hợp lệ.
+2026-04-02 19:59:24,825 - 
+==================================================
+🌟 GIAI ĐOẠN: Phase2_DriftTest
+==================================================
+2026-04-02 19:59:24,825 - 
+🚀 ĐANG XỬ LÝ: Phase2_DriftTest -> CSE-CIC-IDS-2018-Full (10 files)
+2026-04-02 20:06:49,236 - ✅ Hoàn thành CSE-CIC-IDS-2018-Full - Tổng: 16,233,002 mẫu hợp lệ.
+2026-04-02 20:06:49,290 - 
+🚀 ĐANG XỬ LÝ: Phase2_DriftTest -> CICDarknet2020CSVs (13640 files)
+2026-04-02 20:11:30,644 - ✅ Hoàn thành CICDarknet2020CSVs - Tổng: 3,771,317 mẫu hợp lệ.
+2026-04-02 20:11:30,645 - 
+🚀 ĐANG XỬ LÝ: Phase2_DriftTest -> CICDDoS2017 (8 files)
+2026-04-02 20:11:38,731 - ✅ Hoàn thành CICDDoS2017 - Tổng: 2,313,810 mẫu hợp lệ.
+2026-04-02 20:11:38,733 - 
+🚀 ĐANG XỬ LÝ: Phase2_DriftTest -> CIC-DoHBrw-2020 (2 files)
+2026-04-02 20:11:43,863 - ✅ Hoàn thành CIC-DoHBrw-2020 - Tổng: 1,287,778 mẫu hợp lệ.
+2026-04-02 20:11:43,864 - 
+==================================================
+🌟 GIAI ĐOẠN: Phase3_DomainShift
+==================================================
+2026-04-02 20:11:43,865 - 
+🚀 ĐANG XỬ LÝ: Phase3_DomainShift -> CICEVSE2024_Dataset (102 files)
+2026-04-02 20:12:29,526 - ✅ Hoàn thành CICEVSE2024_Dataset - Tổng: 123,772 mẫu hợp lệ.
+2026-04-02 20:12:29,533 - 
+🎉 TOÀN BỘ QUÁ TRÌNH TIỀN XỬ LÝ ĐÃ HOÀN TẤT! 🎉
+2026-04-02 20:12:29,535 - 📊 Báo cáo số lượng Nhãn đã lưu tại: /home/quyhv/Geo_KAN_Project/dataset/processed/global_label_statistics.csv
+2026-04-02 20:12:29,535 - 👉 HÃY MỞ FILE BÁO CÁO TRÊN ĐỂ KIỂM TRA XEM CÓ CÒN 51 NHÃN KHÔNG NHÉ!

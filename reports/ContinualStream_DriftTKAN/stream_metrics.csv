@@ -1,0 +1,13 @@
+Step,Phase,Chunk,F1_Macro,S_rep,S_KAN,Entropy,Drift_Type,Action
+1,Phase1_Train,full_init,0.8175,0.0,0.0,0.0,No Drift,initial_train
+2,Phase2_DriftTest,l1-doh-nondoh,0.0000,0.939723,0.000443,0.5618,Type I: Feature Shift,fine_tune
+3,Phase2_DriftTest,l2-benigndoh-maliciousdoh,0.0000,0.940052,0.000991,0.5945,Type I: Feature Shift,fine_tune
+4,Phase2_DriftTest,benign-monday-no-metadata,0.1244,0.968473,0.001665,0.2538,Type I: Feature Shift,fine_tune
+5,Phase2_DriftTest,botnet-friday-no-metadata,0.1752,0.950888,0.002315,0.2125,Type I: Feature Shift,fine_tune
+6,Phase2_DriftTest,bruteforce-tuesday-no-metadata,0.1661,0.925624,0.003276,0.2245,Type I: Feature Shift,fine_tune
+7,Phase2_DriftTest,ddos-friday-no-metadata,0.0929,0.893477,0.004244,1.0000,Type I: Feature Shift,fine_tune
+8,Phase2_DriftTest,dos-wednesday-no-metadata,0.1347,0.886289,0.005898,0.4351,Type III: Severe Concept Drift,fine_tune
+9,Phase2_DriftTest,infiltration-thursday-no-metadata,0.1996,0.864943,0.007266,0.2100,Type III: Severe Concept Drift,fine_tune
+10,Phase2_DriftTest,portscan-friday-no-metadata,0.1661,0.842708,0.008406,0.2193,Type III: Severe Concept Drift,fine_tune
+11,Phase2_DriftTest,webattacks-thursday-no-metadata,0.1995,0.817605,0.010091,0.2491,Type II: Decision Shift,fine_tune
+12,Phase2_DriftTest,all,0.0000,0.938324,0.011468,0.8022,Type III: Severe Concept Drift,fine_tune

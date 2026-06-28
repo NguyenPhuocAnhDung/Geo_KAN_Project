@@ -1,0 +1,12 @@
+Scenario,Total_Chunks,Total_Drifts,False_Alarm_Rate,MTBFA,Avg_F1
+Clean,50,0,0.0000,50.00,0.0233
+Gaussian_Noise_0.1,50,0,0.0000,50.00,0.0229
+Gaussian_Noise_0.1,50,0,0.0000,50.00,0.0220
+Gaussian_Noise_0.5,50,0,0.0000,50.00,0.0171
+Gaussian_Noise_0.5,50,0,0.0000,50.00,0.0171
+Gaussian_Noise_1.0,50,1,0.0200,10.00,0.0107
+Gaussian_Noise_1.0,50,1,0.0200,10.00,0.0106
+Label_Noise_10%,50,0,0.0000,50.00,0.0219
+Label_Noise_10%,50,0,0.0000,50.00,0.0196
+Label_Noise_20%,50,0,0.0000,50.00,0.0278
+Label_Noise_20%,50,0,0.0000,50.00,0.0269
