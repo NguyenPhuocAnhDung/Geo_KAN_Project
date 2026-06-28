@@ -16,9 +16,9 @@ except ImportError:
     print("❌ Vui lòng cài đặt river: pip install river")
     sys.exit(1)
 
-from data_preprocess.continual_loader import load_and_merge_data
-from model.model import HierarchicalDriftTKAN
-from train_stream import evaluate_chunk, finetune_on_chunk, StreamTimeSeriesDataset
+from src.data_preprocess.continual_loader import load_and_merge_data
+from src.model.model import HierarchicalDriftTKAN
+from src.training.train_stream import evaluate_chunk, finetune_on_chunk, StreamTimeSeriesDataset
 
 warnings.filterwarnings('ignore')
 
@@ -41,7 +41,7 @@ def run_baselines():
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     logging.info(f"🚀 Khởi chạy Baseline Comparision trên {device}")
     
-    from train_stream import GLOBAL_FEATURE_COLS, GLOBAL_LABEL_MAP
+    from src.training.train_stream import GLOBAL_FEATURE_COLS, GLOBAL_LABEL_MAP
     
     train_df, val_df, test_df_list, test_df_names, all_labels_set, global_scaler = load_and_merge_data(
         use_cache=True, 

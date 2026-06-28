@@ -1,7 +1,7 @@
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-from model.kan_layer import ChebyshevKANLayer 
+from src.model.kan_layer import ChebyshevKANLayer 
 
 class HierarchicalDriftTKAN(nn.Module):
     def __init__(self, input_features, num_classes, lstm_hidden=64, mlp_hidden=32, cheb_degree=3):

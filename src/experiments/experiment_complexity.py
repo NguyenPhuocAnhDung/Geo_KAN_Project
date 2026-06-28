@@ -25,7 +25,7 @@ except ImportError:
     print("❌ Vui lòng cài đặt river: pip install river")
     sys.exit(1)
 
-from experiment_utils import (
+from src.utils.experiment_utils import (
     GLOBAL_FEATURE_COLS, GLOBAL_LABEL_MAP, NUM_CLASSES,
     global_scaler, load_all_stream_chunks, load_model_phase1,
     StreamTimeSeriesDataset, SEQ_LENGTH

@@ -46,8 +46,8 @@ parser.add_argument("--disable_entropy", action="store_true", help="Vô hiệu h
 args = parser.parse_args()
 
 # Import các module nội bộ
-from model.model import HierarchicalDriftTKAN
-from data_preprocess.continual_loader import ClassBalancedReservoirBuffer, StreamDataset
+from src.model.model import HierarchicalDriftTKAN
+from src.data_preprocess.continual_loader import ClassBalancedReservoirBuffer, StreamDataset
 
 # ================= 1. CẤU HÌNH ĐƯỜNG DẪN =================
 CURRENT_DIR = os.path.dirname(os.path.abspath(__file__))

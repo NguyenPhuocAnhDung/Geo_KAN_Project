@@ -19,7 +19,7 @@
 # # warnings.filterwarnings('ignore')
 
 # # # Import mô hình từ folder model
-# # from model.model import Hybrid_TKAN
+# # from src.model.model import Hybrid_TKAN
 
 # # # ================= CẤU HÌNH TỐI ƯU CPU & RAM =================
 # # CURRENT_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -246,7 +246,7 @@
 
 # warnings.filterwarnings('ignore')
 
-# from model.model import Hybrid_TKAN
+# from src.model.model import Hybrid_TKAN
 
 # # ================= CẤU HÌNH TỐI ƯU =================
 # CURRENT_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -459,7 +459,7 @@ import warnings
 warnings.filterwarnings('ignore')
 
 # Sử dụng model Attention_TKAN để khắc phục nhầm lẫn DoS/DDoS
-from model.model import Attention_TKAN
+from src.model.model import Attention_TKAN
 
 # ================= 1. HÀM FOCAL LOSS (Khắc phục yếu điểm Web_Attack) =================
 class FocalLoss(nn.Module):

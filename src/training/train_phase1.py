@@ -20,7 +20,7 @@ import warnings
 warnings.filterwarnings('ignore')
 
 # Import mô hình bản nâng cấp (Attention_TKAN)
-from model.model import Attention_TKAN
+from src.model.model import Attention_TKAN
 
 # ================= HÀM FOCAL LOSS =================
 class FocalLoss(nn.Module):

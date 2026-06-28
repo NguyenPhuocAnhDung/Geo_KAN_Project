@@ -20,7 +20,7 @@ import pyarrow.parquet as pq
 
 # ================= ĐƯỜNG DẪN =================
 CURRENT_DIR = os.path.dirname(os.path.abspath(__file__))
-PROJECT_ROOT = os.path.dirname(CURRENT_DIR)
+PROJECT_ROOT = os.path.dirname(os.path.dirname(CURRENT_DIR))
 
 PROCESSED_DIR = os.path.join(PROJECT_ROOT, "dataset", "processed")
 MODEL_DIR = os.path.join(PROJECT_ROOT, "models")
@@ -116,7 +116,7 @@ def get_phase_boundaries(fraction=SAMPLE_FRACTION):
     return boundaries
 
 # ================= LOAD MÔ HÌNH =================
-from model.model import HierarchicalDriftTKAN
+from src.model.model import HierarchicalDriftTKAN
 
 def load_model_phase1(device=None):
     """Load mô hình HierarchicalDriftTKAN đã train Phase 1."""
@@ -138,4 +138,4 @@ def load_model_phase1(device=None):
     return model
 
 # ================= RE-EXPORT =================
-from train_stream import StreamTimeSeriesDataset, FocalLoss, finetune_on_chunk, evaluate_chunk
+from src.training.train_stream import StreamTimeSeriesDataset, FocalLoss, finetune_on_chunk, evaluate_chunk
